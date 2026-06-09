@@ -1,2 +1,12 @@
 8308の部屋　ここで授業？
 https://colab.research.google.com/drive/1JwmOAldP8n50ns-VGgF0UyekugMxC1co?hl=ja#scrollTo=VempF98tnvOT
+
+
+（課題１）本日の演習で「いろいろ試してみよう！」の中で実施した入出力コードをhtml形式でエクスポートし、提出しなさい。
+
+　　　　　　html形式にする手順
+　　　　　　①ipynb形式でダウンロード（ファイル名の例：aaa.ipynb）
+　　　　　　②再び「ファイル」へアップロード
+　　　　　　③以下のコマンドを入力
+　　　　　　　　!jupyter nbconvert --to html "aaa.ipynb"
+

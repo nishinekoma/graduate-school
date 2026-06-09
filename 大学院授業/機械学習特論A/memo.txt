@@ -38,3 +38,25 @@ https://el.nsl.tuis.ac.jp/moodle/mod/lticontainer/view.php?id=6479
 ジュピター
 https://castor5.nsl.tuis.ac.jp/user/g26014nk/lab
 
+微分とは何？
+  「どれくらい変化してるかを見る」
+  「少し動かしたとき、どれくらい変わるかを見るもの」
+    dy/dx 「xを少し変えたとき、yがどれくらい変わる？」
+    アクセル少し踏んだだけで：
+      急加速 → 微分大
+      あまり変わらない → 微分小
+    を見ている
+    例
+      感覚的な例
+        https://chatgpt.com/s/t_69fd3c11e3408191948acb680b1ecbc7
+      現場での使用例
+        https://chatgpt.com/s/t_69fd3fd8c8d88191bf63165f8f2332e6
+        
+
+偏微分
+  「他を固定して、ある1つだけ動かしたとき、
+    どれくらい変化するかを見る」
+   「他を止めて、1つだけ動かした影響を見ること」
+  例
+    https://chatgpt.com/s/t_69fd39a7921881918ac4dbdca70e9734
+

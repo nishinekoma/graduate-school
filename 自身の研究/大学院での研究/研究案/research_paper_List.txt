@@ -1,0 +1,366 @@
+URL：https://www.akjournals.com/view/journals/2006/15/1/article-p99.xml
+年度　2025年2月（Published online: 2025/02/03）
+タイトル：『Dark patterns and consumer vulnerability』
+学会名：Akadémiai Kiadó（掲載誌：Behavioural Public Policy）
+区分　：査読付き学術論文（Journal Article / Peer-reviewed Article）
+難易度：高め（行動経済学・消費者保護・HCI・政策研究の横断領域）
+概要
+  ダークパターンが年齢・学歴・所得などに関係なく、幅広い消費者層に影響を与えるかを実験的に検証した研究。
+  その結果、「あらゆるグループの個人がダークパターンの影響を受けやすい」という強い証拠を示した。
+  また、支払い操作など追加行動が必要になると、ダークパターンの効果が弱まることも報告している。
+
+
+URL：https://dl.acm.org/doi/full/10.1145/3613904.3642436
+年度　2024年5月（CHI 2024）
+タイトル：『An Ontology of Dark Patterns Knowledge: Foundations, Definitions, and a Pathway for Shared Knowledge-Building』
+学会名：Association for Computing Machinery / Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI 2024)
+区分　：トップ国際会議論文（査読付きフルペーパー）
+難易度：かなり高い（HCI・倫理・法・UX・概念設計を横断）
+概要
+  ダークパターンの用語が統一されていないため、定義を統一し、何がダークパターンかが曖昧だから64種に
+  分類した。
+
+URL：Dark patterns and sludge audits: an integrated approach
+年度：2023年（オンライン公開は2022年頃）
+タイトル：『Dark patterns and sludge audits: an integrated approach』
+学会名：Behavioural Public Policy (Cambridge University Press)
+区分　：査読付き学術論文（Peer-reviewed Journal Article）
+難易度：かなり高い（行動経済学・HCI・UI/UX・規制政策・心理学を横断）
+概要：
+  ダークパターンと、行動経済学でいう「sludge（ユーザに余計な手間や負担を与える設計）」を統合して
+  分析するためのフレームワーク（DPAF: Dark Patterns Auditing Framework）を提案した研究。
+  などの概念を導入し、Facebook や Spotify などの実サービスを監査（audit）している。
+  研究の目的は、規制機関や研究者が「どのUIが問題なのか」を体系的に評価できるようにすること。
+  本研究では、
+    解約をわざと面倒にする
+    不必要な確認画面を増やす
+    ボタンを見つけにくくする
+
+    などのUI設計を、ユーザ行動を妨害・誘導する「sludge」として整理している。
+
+    また、
+
+    detour（遠回りさせる）
+    roundabout（迷わせる）
+    shortcut（簡単そうに見せて誘導する）
+
+    などの概念を導入し、Facebook や Spotify などの実サービスを監査（audit）している。
+    研究の目的は、規制機関や研究者が「どのUIが問題なのか」を体系的に評価できるようにすること。
+
+E-market,onilne-shopping系統
+  URL：Dark patterns in online shopping: do they work and can nudges help mitigate impulse buying?
+  年度：2022年5月 公開（Behavioural Public Policy Vol.9 Issue.1 は2025年収録）
+  タイトル：『Dark patterns in online shopping: do they work and can nudges help mitigate impulse buying?』
+  学会名：Cambridge University Press / Behavioural Public Policy
+  区分　：査読付き学術論文（Peer-reviewed Journal Article）
+  難易度：高め（行動経済学・消費者心理・HCI・ECサイト設計）
+  概要：
+      ECサイトに存在するダークパターンが、本当に衝動買いを増加させるのかを実験的に検証した研究。
+      研究では、        
+        「残りわずか」「期間限定」「高需要」「ポジティブレビュー」
+      などのダークパターンを用いた場合、通常UIよりも購入衝動が高まることを示した。
+      また、
+        時間を置かせる（postponement）理由を書かせる（reflection）注意を逸らす（distraction）
+      といった介入（nudge）が、ダークパターンによる衝動買いを軽減できるかも検証している。
+      結果として、介入方法によって効果差はあるものの、「何もしないよりは介入した方が良い」ことが示された。
+  
+URL：NCI Research Archive 論文ページ
+  年度：2024年
+  タイトル：『Detecting Dark Patterns in Shopping Websites – A Multi-Faceted Approach Using Bidirectional Encoder Representations From Transformers』
+  学会名：National College of Ireland（学位論文・研究リポジトリ）
+  区分　：修士論文 / 学位論文（Master’s Thesis）
+  難易度：高め（NLP・BERT・Web解析・ダークパターン検知）
+  概要（査読されてねぇ）だが一応修士論文
+    BERT を用いてショッピングサイト上のダークパターンを検知
+    特徴は：
+      UIテキスト
+      ボタン文言
+      商品説明
+      誘導表現
+
+      などを自然言語処理（NLP）で解析している点。
+
+UI介入系
+  URL：https://dl.acm.org/doi/epdf/10.1145/3637336
+  年度：2024年4月
+  タイトル：『From Awareness to Action: Exploring End-User Empowerment Interventions for Dark Patterns in UX』
+  学会名：Association for Computing Machinery / Proceedings of the ACM on Human-Computer Interaction (PACMHCI CSCW 2024)
+  区分　：トップ国際会議系論文（査読付きフルペーパー）
+  難易度：かなり高い（HCI・CSCW・UX・Web augmentation・デザイン倫理）
+  概要
+    ダークパターンに対し、実際にこれはダークパターンですなどの対抗行動を補助すること。
+    解約や隠れた選択誌を可視化したりするということを行った。「残り1個」などは希少性を利用して
+    焦らせているという風に実際に説明したりするということをしている。実際にUI可視化などをした。
+
+    既存研究ではユーザエンパワーメント型介入が提案されているが、手作業ベースであり、
+    対象ダークパターンも限定的である。またユーザ状況に応じた介入最適化や動的UI適応には課題が残る。
+
+
+教育とダークパターン
+
+  著者　所属がない。
+  　サイテーション（引用のデータがあるから形式があるから書式を見る。）
+      それをとってくる。
+
+  固まったデータベースがあって、判定アルゴリズムがあって、皆で巡回しているのがあって、共有するみたいな。
+    →Adblocker()
+
+    人を信じやすいタイプなのか、ITリテラシーが大事なのか？
+
+    Xのアルゴリズム（AIと人間を融合して）一般論
+    説明可能なAI
+
+    変えるなら　悪質なWEBサイトがこうあるからこう突っ走れました見たいな感じにする。
+    目線のトラッキング　どう焦らせていているのかを目線で判断するとか
+      疑似的に遅延発生させるとか。実験系の路線もあり。
+      　人間工学系の助言　佐藤先生に聞いたりする。
+
+
+      子供に対して、ダークパターンを仕掛けて騙されないようにする教育システムの開発をする！！
+        河野先生
+          子供は前頭葉の発達が未成熟だから。。。。
+
+
+search words for "dark patterns" OR "deceptive design" AND children "vulnerability"
+  URL：https://opo.iisj.net/index.php/osls/article/view/2351
+  年度：2026年2月（Published: 2026/02/02）
+  タイトル：『A cautionary tale: children, dark patterns and normative perspectives』
+  (子供、ダークパターン、そして規範的視点.pdf)
+  学会名：Oñati International Institute for the Sociology of Law
+  （掲載誌：Oñati Socio-Legal Series / OSLS）
+  区分　：査読付きジャーナル論文（Socio-Legal / Policy Research）
+  難易度：高め（法学・HCI・子どもの権利・デジタル規制・行動設計を横断）
+  著者：Vitória Oliveira
+  所属：ブラジルの研究機関系（CAPES支援記載あり）
+  概要
+    研究目的
+      ユーザーの行動を操作する欺瞞的なデザイン（ダークパターン）と、
+      子どものデジタル体験がどのように交差しているかを探求しています 。
+      普遍的な認知の脆弱性と、文脈特有の感受性がどう交わるかを検証しています。
+    結論
+        個別主義的説明と普遍主義的説明を組み合わせることで、子どもを念頭に
+        置いて開発された保護措置は、デジタル脆弱性に幅広く対処する基本的な
+        規範を確立できると私たちは主張する。
+      原文（スペイン文？）section Resumen
+        Al  combinar  explicaciones  particularistas  y  universalistas, sostenemos que las medidas de protección desarrolladas pensando en 
+        los niños pueden establecer normas básicas que aborden la vulnerabilidad digital de manera más amplia.
+    論文での使い方
+    これは単なる子ども向けのリテラシー教育に留まらない。
+    Oliveira（2026）の規範的視点に示される通り、ダークパターンは全人類に共通する認知の弱点
+    を突くものである 。したがって、最も脆弱な子どもを基準としてデザインされた防衛・教育の仕組みは
+    、結果として、認知負荷が高まっている一般の大人や高齢者をも包摂して救う、デジタル社会全体の
+    『保護のベースライン（基本基準）』を確立することに繋がる 。ここに本研究の極めて高い社会的・学術的意義
+    がある。」
+
+
+URL： https://arxiv.org/abs/2506.23017
+年度： 2025年6月公開
+タイトル： 『Mind the Dark: A Gamified Exploration of Deceptive Design Awareness for Children in the Digital Age』
+区分： プレプリント（未査読・arXiv公開）
+分野： HCI・Child-Computer Interaction (CCI)・ゲーミフィケーション・メディア教育
+難易度： 中程度（HCIと児童教育の基礎知識が必要。システム自体はWebアプリで実装）
+備考： 著者は「アプリによって行動が変化した」と主張しているが、実際の定量データは「大人が講義をした直後の短期記憶テスト」でしかなく、アプリ自体の評価は「感想レベル（ユーザビリティテスト）」に留まっている点に注意が必要。ここが本研究（西村さんの研究）の最大の踏み台となる。
+
+Abstract（真実に基づく訂正版）
+  目的： 子どもへのダークパターン教育（早期の気づき）の効果を調査すること。
+  方法： 147名の子どもに「講義（レクチャー）」を行い、その前後で同じ罠画面を見せるテストを実施した。
+    また別途36名に、罠の知識を教えるクイズ型Webアプリ「Mind the Dark」を使用させ、付箋で感想を集めた。
+  結果： 講義直後のテストでは罠を回避する選択が増えたが、アプリ自体による学習定着度や行動変容を定量的に示すデータは得られていない。アプリの評価は「キャラクターが可愛い」「楽しい」といった定性的な感想に留まった。
+  結論： 知識を与える早期教育は重要だが、本研究の実証は初期段階（直後の記憶確認とアプリの印象評価）に留まっており、真に知識を活用できるかの客観的・長期的な検証が課題として残された。
+
+自身の研究との違い（完全版）
+  Khanら（2025）の目的と限界：【防衛知識の付与 ＋ 主観的評価】
+    ゴール： 罠の存在を知り、「これ怪しい！」と見破れるようになること（Awareness）。
+    教材のタイプ： 「知識を教え込む」紙芝居・クイズ型のアプリ。
+  評価の限界：
+    講義直後のアンケートや、「楽しかった」という主観的な感想（付箋）のみでシステムを評価しており、
+    実際のUXや感情の動きを客観的に測定できていない。
+    あなたの目的と新規性：【改善のエンパワーメント ＋ ハードウェアによる客観的評価】
+    ゴール： 罠を見破るだけでなく、それを「ユーザーに優しいUI（ポジティブUX）に自力で直し、より良い環境を作れる
+            ようになること（Redesign & Empowerment）」。
+  教材のタイプ： 
+    「自ら手を動かしてUIを操作・改修する」実践的なシステム。
+  評価の新規性： 
+    テストの点数ではなく、UI改修プロセスにおける子どもの「表情（困惑から笑顔へ）」や「音声（発話）」をハードウェア
+    でセンシングし、学習体験中の内的変化を定量的に実証する。
+
+概要（真実に基づく訂正版）
+  本研究は、デジタルデバイスを自律的に使い始める8〜12歳の子どもたちが、ダークパターンに対して無防備であるという
+  課題に対処するアプローチの提案です。事前調査（147名）では、子どもたちが罠を感覚的に察知できても言語化できず、
+  親に頼る傾向があることが示されました。これに対し研究チームは、ダークパターンを解説する「講義」を実施し、その直後に
+  同じ問題を出題することで罠の回避率が上がることを確認しました。さらに、学校の授業で使えるゲーム型Webアプリ「Mind the Dark」
+  （解説とクイズのモジュール）を開発しましたが、このアプリの評価は別の36名を対象とした「付箋による感想集め（ユーザビリティテスト）」に
+  留まっています。論文内では「アプリの教育によって行動が安全な方向へ変化した」と主張されていますが、実際には講義直後の短期記憶テストと
+  アプリの主観的な印象評価しか行われておらず、「システムによる教育効果」を定量的に証明するには至っていません。
+
+  URL：https://doi.org/10.34190/ecgbl.17.1.1656 （ECGBL 2023 収録）
+  年度：2023年[cite: 4]
+  タイトル：『The Dark Side of Fun: Understanding Dark Patterns and Literacy Needs in Early Childhood Mobile Gaming』[cite: 4]
+  区分：査読付き国際会議論文（Peer-reviewed Conference Paper）[cite: 4]
+  状態：採択・出版済み（第17回 European Conference on Games Based Learning）[cite: 4]
+  分野：HCI・ゲーム研究・メディア教育・児童発達学
+  難易度：中程度（AI等の技術的知識は不要だが、HCIのダークパターン分類とメディアリテラシーの概念理解が必要）
+  備考：対象が0〜5歳の幼児であるため、子ども自身への教育だけでなく「保護者（大人）へのゲームリテラシー教育」の重要性を強く指摘している点が特徴的。
+  著者：Carla Sousa, Ana Oliveira[cite: 4]
+  所属：Lusófona University, CICANT（ポルトガル・リスボン）[cite: 4]
+  Abstract
+    目的
+      幼児向けモバイルゲームにダークパターンが存在するか調査。
+    方法
+      App Store人気ゲーム5本を質的分析。
+    結果
+      課金誘導・報酬設計・広告誘導など複数のダークパターンを確認。
+    結論
+      幼児向けゲームでもダークパターンは広く存在し、保護者・教育・開発者による対策が必要。
+  概要：
+  本研究は、0〜5歳の幼児向けに設計された人気の無料モバイルゲーム（App Storeの上位5アプリ）を対象に、
+  ダークパターンの存在を質的に分析したものです[cite: 4]。分析の結果、
+  「美的操作（魅力的なキャラクターやUIを用いた誘導）」「ペイウォール（課金しないと進めない壁）」
+  「ギャンブルに似た定期的な報酬」といった、時間的・金銭的・心理的なダークパターンが蔓延していることが
+  明らかになりました[cite: 4]。なお、対象年齢の特性上、友達を招待させるような「社会的」ダークパターンは
+  確認されませんでした[cite: 4]。これらのゲームは教育的要素を含み「無料」を謳いながらも、
+  実態はアプリ内課金へと巧みに誘導する構造になっており、既存のペアレンタルコントロール機能も限定的です[cite: 4]。
+  結論として、年齢的に子ども自身がこれらの罠を見抜くことは困難であるため、
+  子どもの安全なプレイ環境を守るための最大の鍵は「保護者や教育者など、周囲の大人自身のゲームリテラシー」
+  の向上にあると強調しています[cite: 4]。
+
+URL：https://dl.acm.org/doi/10.1145/3544548.3580935
+  年度：2023年
+  タイトル：『12 Ways to empower: Designing for children's digital autonomy』
+  区分：査読付き国際会議論文（Peer-reviewed Conference Paper）
+  状態：採択・出版済み（CHI 2023: ACM CHI Conference on Human Factors in Computing Systems）
+  分野：HCI・Child-Computer Interaction (CCI)・教育工学
+  難易度：中〜高程度（「エンパワーメント」や「自律性」といったデザイン理論の深い理解が必要）
+  著者：Ge Wang, Jun Zhao, Max Van Kleek, Nigel Shadbolt
+  所属：University of Oxford（オックスフォード大学・イギリス）
+  概要：
+    概要：
+    45名の子どもと37名の青年が、公平なデザインを欺瞞的（騙すような形）にするために描き直し、
+    欺瞞的なインターフェースがユーザーにどれだけ効果的に影響を与えるかでランク付けした。
+      本研究は、デジタル環境において子どもたちを単なる「保護の対象」として扱うのではなく、彼らの
+      「デジタルな自律性（Digital Autonomy）」をいかに育み、エンパワーするか（権限を与えるか）を
+      探求した理論研究です。過去のHCIや児童教育に関する文献を広範にレビューし、子どもに自律性を与える
+      ためのデザインアプローチを「12の枠組み（Ways）」として体系化しました。例えば、「カスタマイズ権限を与える」
+      「仕組みを透明化する」「自発的な選択を促す」といったアプローチが含まれます。
+      本論文はガイドラインの提示にとどまっており、「保護とエンパワーメントのバランスをどう取るか」
+      「特定の領域（ダークパターンなど）のシステムにこれをどう実装・応用するか」は、今後のHCI研究における
+      重要な課題であると結論付けています。
+    
+    研究との差別化
+      罠の作り方を考えさせる（＝悪用や闇落ちの心理を刺激する）」というアプローチを、
+      先行研究がそのまま実行している。「悪いUIを直す（UXを向上させる）」というアプローチとは、
+      完全にベクトルが真逆
+
+URL：https://doi.org/10.3390/digital5030028
+  年度：2025年
+  タイトル：『Digital Persuasion in the Classroom: Middle School Students’ Perceptions of Neuromarketing and Screen-Based Advertising』
+  区分：査読付き国際誌論文（Peer-reviewed Journal Article）
+  状態：採択・出版済み（MDPI Digital, Vol.5, Issue 3, Article 28；受理 2025年7月21日、公開 2025年7月22日）
+  分野：メディア教育・広告リテラシー・HCI周辺・消費者心理・教育心理・デジタルマーケティング
+  難易度：中程度
+  備考：タイトルは「ニューロマーケティング」を前面に出しているが、実際には脳計測や実験刺激を使ったニューロマーケティング研究ではなく、中学生の自己申告アンケートをPLS-SEMで分析した広告リテラシー研究に近い。ここはかなり注意が必要。
+  著者：Stefanos Balaskas, Christos Zotos, Lamprini Lourida, Kyriakos Komis
+  所属：University of Patras、Arsakeia Schools of Patras など、ギリシャ・パトラスの研究者・教育機関が中心
+  掲載誌：Digital（MDPI、ISSN 2673-6470）
+  ジャーナル評価：Digital はMDPIの査読付きOA誌で、Scopus等に収録されているとMDPI側は説明しており、SCImago上ではComputer Science miscellaneousでQ2とされる。ただし、MDPI誌であること、出版スピードが速いこと、分野適合性がやや広いことから、評価時には「トップジャーナル級」ではなく「中堅〜新興OA誌」と見るのが妥当。 [digital-05-00028-v3 | PDF], [mdpi.com] [digital-05-00028-v3 | PDF] [mdpi.com], [scimagojr.com]
+
+  Abstract
+    目的
+      中学生が、ニューロマーケティング的な広告知識・スクリーン広告 exposure・広告リテラシーをどのように認識し、
+      それが購買意図にどう関係するかを検討する。対象はギリシャの12〜15歳の中学生244名。 [digital-05-00028-v3 | PDF]
+    方法
+      ギリシャの私立学校ネットワーク Arsakeia–Tositseia Schools の生徒244名を対象に、
+      紙ベースの質問紙調査を実施し、PLS-SEMで「ニューロマーケティング認知」「スクリーン広告接触」
+      「広告懐疑」「説得知識」「購買意図」などの関係を分析した。 [digital-05-00028-v3 | PDF]
+    結果
+      ニューロマーケティング認知・知識（NAK）とスクリーン広告接触（SBA）は購買意図に正の影響を示した一方、
+      ニューロマーケティングへの興味・関与（NEI）は購買意図に直接の有意な影響を示さなかった。
+      また、説得知識（PK）と広告懐疑（AS）は、想定とはやや逆説的に、購買意図を弱めるだけでなく、
+      むしろ正に関連する結果として報告されている。 [digital-05-00028-v3 | PDF]
+    結論
+      著者らは、スクリーン広告やニューロマーケティング的な説得技法に対する教育的介入、広告リテラシー教育、
+      政策的対応の必要性を主張している。特に若年層は広告を認識できても必ずしも抵抗できないため、学校教育における
+      広告リテラシーの強化が重要だとされる。 [digital-05-00028-v3 | PDF]
+
+  概要
+  本研究は、12〜15歳のギリシャの中学生244名を対象に、スクリーン広告やニューロマーケティングに関する認知・興味・広告接触が、説得知識、広告懐疑、購買意図にどう結びつくかを調べた量的研究です。 [digital-05-00028-v3 | PDF]
+  調査では、Neuromarketing Awareness and Knowledge（NAK）、Interest and Engagement with Neuromarketing（NEI）、Screen-Based Advertising Exposure（SBA）、Persuasion Knowledge（PK）、Advertising Skepticism（AS）、Purchase Intentions（PI）という構成概念を設定し、PLS-SEMによって直接効果・媒介効果・年齢や広告教育経験によるグループ差を分析しています。 [digital-05-00028-v3 | PDF]
+  主な結果として、ニューロマーケティングの認知・知識が高い生徒ほど購買意図が高く、スクリーン広告への接触頻度が高い生徒ほど購買意図も高い傾向が示されました。一方で、単なる「ニューロマーケティングへの興味」は購買意図に直接つながらず、広告懐疑を通じた間接効果のみが報告されています。 [digital-05-00028-v3 | PDF]
+  また、年齢・過去の広告クリック経験・広告リテラシー教育経験・ニューロマーケティングの事前認知によって、各パスの強さが異なるとされ、著者らは、広告リテラシー教育は一律ではなく、年齢や経験に応じて設計すべきだと論じています。
+
+
+
+論文引用
+  Rozendaal, E., Buijzen, M., & Valkenburg, P. M. (2011).
+  Children’s understanding of advertisers’ persuasive tactics.
+  International Journal of Advertising, 30(2), 329–350.
+  https://doi.org/10.2501/IJA-30-2-329-350
+概要
+  この2011年の論文は、まさに「8〜12歳の子ども」を対象に調査を行い、「販売意図（モノを売ろうとしている）
+  は分かっても、巧妙な説得戦術（感情への訴えかけ等）は8〜12歳ではまだ理解できない」ということを実証したもの
+    ・子どもの広告リテラシー・説得の知識（Persuasion Knowledge）研究において、
+      世界中で引用されている超有名な原典（クラシック）
+用途
+  8〜12歳はまだ罠に対して脆弱である」という主張を裏付け
+
+
+URL:https://www.cfa.go.jp/policies/youth-kankyou/internet_research/results-etc/r07
+  PDF：R7こどものインターネットの利用状況.pdf
+  From：子ども家庭庁
+  title:令和7年度「青少年のインターネット利用環境実態調査」報告書
+  memo
+    URL：https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/07b451ac-8c17-4479-ace3-d4d551ee7420/c213133b/20260327_policies_youth-kankyou_internet_research_results-etc_r07_06.pdf
+      P.21 
+        用途：検索調べもの
+        （小学校＿1年生）7歳から （小学校 2年生）8歳へと
+        　28.2　→　42.4に急上昇している。
+        小学生はこの8歳の年齢からインターネットで検索・調べものを6割している。
+
+      p.53 
+        インターネットにのめりこんで、保護者が注意してもインターネットをやめないことがある
+        図表2-3-1-7-2
+        「インターネットにのめりこんで、保護者が注意してもやめないことがある」
+        割合：
+          7歳：30.3％  8歳：33.3％(使い始め)  9歳：40.8％（ここで1年）（4割超え）
+          インターネットにのめりこんで、保護者が注意してもインターネットをやめないことがある。
+          年齢として（小学校 3年生）9歳から4割超えているため、リテラシー教育が必要だとする。
+
+      結論： のめり込みが4割を超えてから（9歳）では遅い。能動的な検索が急増し、
+            のめり込みの兆候が出始める『使い始めの8歳』から予防・介入すべき。
+
+Web
+  ハードウェアをつなげたり？表情や対応をセンシングしたり、生体データや、楽しそうな顔をしているか。
+    →　学びの評価。声をセンシング　これ嘘これほんとと言っているのをとる。
+
+  何かの方法でセンシングするという方向に持っていけるといいかもしれない。
+    10月
+      四街道子供街（実験日）
+      2週間で仕上げをすれば
+
+("dark patterns" OR "deceptive design") AND (children OR kids) AND ("redesign" OR "fix" OR "modify") AND (system OR app OR application)
+（「ダークパターン」または「欺瞞的なデザイン」）かつ（子供またはキッズ）かつ（「再設計」または「修正」または「変更」）かつ（システムまたはアプリまたはアプリケーション）
+  URL：https://doi.org/10.1145/3679318.3685358
+  年度：2024年
+  タイトル：『Growing Up With Dark Patterns: How Children Perceive Malicious User Interface Designs』
+  区分：査読付き国際会議論文（Peer-reviewed Conference Paper）
+  状態：採択・出版済み（NordiCHI 2024, October 13–16, 2024, Uppsala, Sweden）
+  分野：HCI・Child-Computer Interaction（CCI）・ダークパターン研究・ユーザー調査・児童のデジタルリテラシー
+  難易度：中程度（HCIにおけるダークパターン分類、児童を対象としたユーザー調査、インターフェース評価の基礎理解が必要）
+  備考：この研究は、子どもにダークパターンを「教える教材」を開発した研究ではなく、子どもが既存の悪意あるUI・誘導的UIをどのように理解し、どの程度見抜けるかを調査した研究である点が特徴的。
+  著者：René Schäfer, Sarah Sahabi, Annabell Brocker, Jan Borchers
+  所属：RWTH Aachen University（ドイツ・アーヘン工科大学）
+
+  Abstract
+    目的
+      子どもがダークパターン、すなわちユーザーの利益に反する意思決定へ誘導する悪意あるUIデザインをどのように
+      認識・理解するのかを明らかにすることを目的としている。 
+    方法
+      ドイツの学校において、10〜11歳の小学5年生66名を対象に、ダークパターンを含むUIや、クッキーバナーの再設計課題を用いた調査を実施している。
+      研究では、子どもに「ユーザーをCookie承諾へ誘導するようなバナー」を作らせる課題が含まれており、子どもがどのような操作的デザインを思いつくかを分析している。 
+    結果
+      子どもたちは、金銭的補償、安全性の約束、ボタンサイズや色の違い、拒否選択肢の隠蔽、強制的な選択など、複数の誘導的・操作的デザイン要素を自ら用いることが確認された。
+      また、子どもたちはダークパターンの背後にある意図を一定程度理解していた一方で、すべての操作的要素を安定して見抜けるわけではなく、過度に複雑な表現や操作的な文言に気づく割合には限界があった。 
+    結論
+      子どもはダークパターンを完全に無理解な存在ではなく、一定の操作意図を理解できるが、その認識は不完全であり、特に巧妙な表現・視覚的誘導・選択肢の非対称性には脆弱である。
+      そのため、子ども向けのデジタル環境では、単に保護者管理に頼るだけでなく、子ども自身が誘導的UIを認識できるようにする教育や、そもそも子どもを対象にした悪質なUI設計を制限する設計・政策上の対応が必要である。
+
