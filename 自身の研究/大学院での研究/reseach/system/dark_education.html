@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>モンスターカード・オンライン ｜ ネットパトロール演習</title>
+    <link rel="stylesheet" href="dark_education.css">
+    <script src="dark_education.js" defer></script>
+</head>
+<body>
+
+<div id="patrol-ui">
+    <div class="patrol-header">🚔 ネットパトロール捜査ツール 🚔</div>
+    <div id="tools-container">
+        <button id="tool-glass" class="tool-btn">🔍 真実の虫眼鏡</button>
+        <button id="tool-stop" class="tool-btn">🛑 時間停止ストッパー</button>
+        <div id="trash-can">🗑️ ゴミ箱（罠をここに捨てろ！）</div>
+    </div>
+</div>
+
+<div id="shop-area">
+    <header>
+        <div class="shop-logo">⚡️ MONSTER CARD ONLINE</div>
+        <div class="shop-nav">🔍 検索 👤 ログイン 🛒 カート(0)</div>
+    </header>
+
+    <div class="category-bar">
+        <span>🔴 モンスターから探す</span>
+        <span>📋 カテゴリから探す</span>
+        <span>✨ 新商品</span>
+        <span>👑 ランキング</span>
+    </div>
+
+    <div id="main-content">
+        <h2>商品一覧 (1〜10件 / 全189件)</h2>
+        
+        <div class="product-grid">
+            
+            <div class="item-card" id="trap1">
+                <div class="img-placeholder">限定スリーブ画像</div>
+                <p class="item-name">限定スリーブ ピカピカ版</p>
+                <p class="item-price">100円 <span class="badge">特価</span></p>
+                <p id="trap1-text" class="hidden-trap-text" draggable="true">※毎月3,000円の自動定期購入コースに登録されます。</p>
+                <button class="cart-btn" onclick="checkTrap(1)">カートに入れる</button>
+            </div>
+
+            <div class="item-card" id="trap2">
+                <div class="img-placeholder">幻のパック画像</div>
+                <p class="item-name">拡張パック「幻の鼓動」</p>
+                <p class="item-price">500円</p>
+                <div id="trap2-timer" class="hover-trap-timer" draggable="true">⚠️ 残り <span id="t2-time">03:59</span> で販売終了！</div>
+                <button class="cart-btn" onclick="checkTrap(2)">カートに入れる</button>
+            </div>
+
+            <div class="item-card" id="trap3">
+                <div class="img-placeholder">デッキケース画像</div>
+                <p class="item-name">公式デッキケース</p>
+                <p class="item-price">800円</p>
+                <div id="trap3-options" class="sneak-trap" draggable="true">
+                    <label><input type="checkbox" checked disabled> お急ぎ便 (+500円)</label><br>
+                    <label><input type="checkbox" checked disabled> ギフト包装 (+300円)</label>
+                </div>
+                <button class="cart-btn" onclick="checkTrap(3)">カートに入れる</button>
+            </div>
+
+            <div class="item-card sold-out">
+                <div class="img-placeholder">第1弾パック画像</div>
+                <p class="item-name">拡張パック「始まりの剣」</p>
+                <p class="item-price">150円</p>
+                <button class="cart-btn disabled">品切れ</button>
+            </div>
+
+            <div class="item-card" id="trap4">
+                <div class="img-placeholder">レアカード画像</div>
+                <p class="item-name">シングルカード「伝説の竜」</p>
+                <p class="item-price">1,500円</p>
+                <div id="trap4-popup" class="fomo-trap" draggable="true">👀 現在、145人がこの商品を検討中！</div>
+                <button class="cart-btn" onclick="checkTrap(4)">カートに入れる</button>
+            </div>
+
+            <div class="item-card" id="trap5">
+                <div class="img-placeholder">福袋画像</div>
+                <p class="item-name">お得なスターター福袋</p>
+                <p class="item-price">3,000円</p>
+                <button class="cart-btn" onclick="checkTrap(5)">カートに入れる</button>
+                <a href="#" id="trap5-link" class="shame-trap" draggable="true">いいえ、私は損をする愚かな人間です</a>
+            </div>
+
+            <div class="item-card">
+                <div class="img-placeholder">プレイマット画像</div>
+                <p class="item-name">公式プレイマット</p>
+                <p class="item-price">2,500円</p>
+                <button class="cart-btn safe" onclick="alert('これは安全な商品だ！任務を続けよう。')">カートに入れる</button>
+            </div>
+
+            <div class="item-card">
+                <div class="img-placeholder">プレイマット画像</div>
+                <p class="item-name">公式プレイマット</p>
+                <p class="item-price">2,500円</p>
+                <button class="cart-btn safe" onclick="alert('これは安全な商品だ！任務を続けよう。')">カートに入れる</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="success-overlay">
+    <div id="success-area">
+        <h3 style="color: #2e7d32;">🎉 違反UIの修正に成功！</h3>
+        <p id="success-message"></p>
+        <button class="good-btn" onclick="closeSuccess()">捜査に戻る</button>
+    </div>
+</div>
+
+<div id="game-over-overlay">
+    <div id="game-over-area">
+        <h3 style="color: #d32f2f;">❌ 捜査失敗...罠にかかった！</h3>
+        <p id="game-over-message"></p>
+        <button class="retry-btn" onclick="location.reload()">やり直す</button>
+    </div>
+</div>
+
+</body>
+</html>
