@@ -1,0 +1,84 @@
+参考文献をこのフォーマット例にならって作成してほしい。
+
+[1]本生 崇人, 川崎 慈英, 藤橋 卓也, 猿渡 俊介, 渡辺 尚，"プレイヤパフォーマンス
+
+低下を抑制するオンラインゲーム向け遅延補償に関する一研究"，マルチメディ
+
+ア,分散協調とモバイルシンポジウム2228論文集 ,2020/06/17.
+
+• [2] J. Ho, and S. Ermon, “Generative adversarial imitation learning.” Advances in neural
+
+information processing systems, pp.4565–4573, 2016.
+
+
+
+で、素材
+
+[1] FTC, Bringing Dark Patterns to Light, 2022.https://www.ftc.gov/reports/bringing-dark-patterns-light
+
+[2] デジタル時代におけるより良い消費生活を支える信頼の構築に係る官民共創ラウンドテーブル 第1回https://www.caa.go.jp/policies/future/ppi/assets/caa_futurer101_250129_1.pdf
+
+[3] A. Mathur, G. Acar, M. J. Friedman, E. Lucherini, J. Mayer, M. Chetty, and A. Narayanan,
+
+“Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites.”
+
+Proceedings of the ACM on Human-Computer Interaction (PACM HCI), Vol. 3, CSCW, Article 81, pp. 1–32, 2019.
+
+URL: :https://dl.acm.org/doi/epdf/10.1145/3359183
+
+[4]
+
+論文名: Leon, P. G., et al. (2012). "Why Johnny Can't Opt Out: A Usability Evaluation of Tools to Limit Online Behavioral Advertising." (CHI 2012)
+
+公式URL (ACM): https://dl.acm.org/doi/10.1145/2207676.2207759
+
+無料PDF: https://www.andrew.cmu.edu/user/pgleon/WhyJohnnyCantOptOut.pdf
+
+
+
+[5] https://opo.iisj.net/index.php/osls/article/view/2351
+
+
+
+[6]URL： https://arxiv.org/abs/2506.23017
+
+年度： 2025年6月公開
+
+タイトル： 『Mind the Dark: A Gamified Exploration of Deceptive Design Awareness for Children in the Digital Age』
+
+区分： プレプリント（未査読・arXiv公開）
+
+分野： HCI・Child-Computer Interaction (CCI)・ゲーミフィケーション・メディア教育
+
+Authors: Noverah Khan, Hira Eiraj Daud, Suleman Shahid; from the Lahore University of Management Sciences
+
+
+
+
+
+[7]    こども家庭庁. (2025). 令和7年度「青少年のインターネット利用環境実態調査」報告書.
+
+    https://www.cfa.go.jp/policies/youth-kankyou/internet_research/results-etc/r07
+
+    （定期的なシステム更新にて将来的にリンク切れを防ぐため大元を使用。）
+
+
+
+
+
+[8]
+
+    Rozendaal, E., Buijzen, M., & Valkenburg, P. M. (2011).
+
+    Children’s understanding of advertisers’ persuasive tactics.
+
+    International Journal of Advertising, 30(2), 329–350.
+
+    https://doi.org/10.2501/IJA-30-2-329-350
+
+
+
+ではお願い。
+
+
+
