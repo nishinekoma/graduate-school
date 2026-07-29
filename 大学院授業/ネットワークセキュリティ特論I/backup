@@ -1,6 +1,0 @@
-mv /etc/netplan/01-network-manager-all.yaml /etc/netplan/01-network-manager-all.yaml.bak
-  .bak を付けた意味
-    元の名前： 01-network-manager-all.yaml
-    末尾が .yaml なので、システムが「よし、これに従ってネットワークを動かそう！」と読み込みます。
-    変えた名前： 01-network-manager-all.yaml.bak
-    末尾が .bak（バックアップの略）に変わったので、システムは**「あ、これは設定ファイルじゃないな」と無視する**ようになります。

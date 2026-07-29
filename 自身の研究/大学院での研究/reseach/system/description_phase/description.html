@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おしごとのせつめい</title>
+    <link rel="stylesheet" href="description.css">
+</head>
+<body>
+
+<div id="presentation-container">
+    
+    <!-- スライド1：ECサイトの仕組み -->
+    <div class="slide active" data-step="0">
+        <h2>インターネットでの おかいもの</h2>
+        <p>インターネットで「<ruby>買<rt>か</rt></ruby>う」ボタンを<ruby>押<rt>お</rt></ruby>すと、どうなるかな？</p>
+        
+        <div class="visual-flow">
+            <div class="flow-item"><div class="icon-box">🖱️</div><p>ボタンを<ruby>押<rt>お</rt></ruby>す</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">💳</div><p>ほんとうのお<ruby>金<rt>かね</rt></ruby>をはらう</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">🚚</div><p><ruby>品物<rt>しなもの</rt></ruby>がとどく</p></div>
+        </div>
+        <p class="warning-text">ゲームのコインではなく、<strong>ほんとうのお<ruby>金<rt>かね</rt></ruby>がへってしまう</strong>んだ。</p>
+    </div>
+
+    <!-- スライド2：ダークパターンとは -->
+    <div class="slide" data-step="1">
+        <h2>わるい<ruby>表示<rt>ひょうじ</rt></ruby>（ダークパターン）とは？</h2>
+        <p>インターネットには、<strong>ほんとうは<ruby>買<rt>か</rt></ruby>うつもりがなかったのに、<br>つい<ruby>買<rt>か</rt></ruby>ってしまうように<ruby>作<rt>つく</rt></ruby>られた<ruby>罠<rt>わな</rt></ruby></strong>があるよ。</p>
+        
+        <div class="visual-flow">
+            <div class="trap-card">
+                <div class="icon-box">⏳</div>
+                <p>「あと10秒！」と<ruby>焦<rt>あせ</rt></ruby>らせる</p>
+            </div>
+            <div class="trap-card">
+                <div class="icon-box">🔍</div>
+                <p>お<ruby>金<rt>かね</rt></ruby>がかかることを<br>すごく小さく<ruby>書<rt>か</rt></ruby>く</p>
+            </div>
+        </div>
+        <p class="warning-text">このように、<strong>きづかないうちに、いらないモノまで<ruby>買<rt>か</rt></ruby>わせようとする</strong><br>わるい<ruby>罠<rt>わな</rt></ruby>を「ダークパターン」とよぶんだ。</p>
+    </div>
+
+    <!-- スライド3：チュートリアル -->
+    <div class="slide" data-step="2">
+        <h2>ためしてみよう！（チュートリアル）</h2>
+        <p>下のボタンのまわりに、<strong>ちいさな文字で<ruby>書<rt>か</rt></ruby>かれたわるい<ruby>罠<rt>わな</rt></ruby></strong>が<ruby>隠<rt>かく</rt></ruby>れているよ。<br>みつけたら、マウスでクリックしてみよう！</p>
+        
+        <div class="tutorial-box">
+            <button class="fake-buy-btn">🎁 無料プレゼントをもらう！</button>
+            <p id="tutorial-trap" class="hidden-text" onclick="findTrap()">※毎月3,000円はらいます</p>
+        </div>
+        
+        <div id="tutorial-success" class="success-msg" style="display: none;">
+            <p>🎉 <strong>大正解（だいせいかい）！</strong></p>
+            <!-- 意図しない改行を防ぐため、意味の区切りで改行を入れています -->
+            <p class="explanation">
+                「<ruby>無料<rt>むりょう</rt></ruby>」と大きく<ruby>書<rt>か</rt></ruby>いてあるのに、<br>
+                小さく「<ruby>毎月<rt>まいつき</rt></ruby>3,000<ruby>円<rt>えん</rt></ruby>」と<ruby>書<rt>か</rt></ruby>いてあるね。<br>
+                きづかずに<ruby>押<rt>お</rt></ruby>すと、ずっとお<ruby>金<rt>かね</rt></ruby>をはらうことになってしまうんだ。<br>
+                これが「ダークパターン」の<ruby>一<rt>ひと</rt></ruby>つだよ。
+            </p>
+        </div>
+    </div>
+
+    <!-- スライド4：ミッションの説明 -->
+    <div class="slide" data-step="3">
+        <h2>きみの おしごと 🚔</h2>
+        <p>きみは今日から、わるい<ruby>罠<rt>わな</rt></ruby>をみつける<strong>「ネットパトロール屋さん」</strong>だ！</p>
+        
+        <div class="mission-box">
+            <h3>📝 ミッション</h3>
+            <p>これから、おかいものサイトの<ruby>パトロール</ruby>をするよ。</p>
+            <p>サイトのなかに<ruby>隠<rt>かく</rt></ruby>れている<strong>「わるい<ruby>表示<rt>ひょうじ</rt></ruby>（わな）」</strong>をみつけたら、クリックして<ruby>報告<rt>ほうこく</rt></ruby>しよう！</p>
+        </div>
+    </div>
+
+    <!-- ナビゲーションボタン -->
+    <div class="nav-buttons">
+        <button id="prev-btn" class="nav-btn" onclick="changeSlide(-1)" style="visibility: hidden;">⬅ もどる</button>
+        <button id="next-btn" class="nav-btn next" onclick="changeSlide(1)">つぎへ ➡</button>
+    </div>
+
+</div>
+
+<script src="description.js"></script>
+</body>
+</html>
