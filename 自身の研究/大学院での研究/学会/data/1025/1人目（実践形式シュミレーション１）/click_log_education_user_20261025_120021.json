@@ -1,0 +1,141 @@
+{
+  "participant_id": "user_20261025_120021",
+  "survey_attributes": {
+    "participant_id": "user_20261025_120021",
+    "submitted_at": "2026-10-25T03:00:21.102Z",
+    "age": "8",
+    "grade": "3",
+    "gender": "male",
+    "search_freq": "frequent",
+    "device_own": "shared",
+    "game_freq": "never"
+  },
+  "phase": "day1_education",
+  "start_time": "2026-10-25T03:02:24.419Z",
+  "counts": {
+    "found_hidden": 1,
+    "found_timer": 1,
+    "found_sneak": 1,
+    "found_scarcity": 1,
+    "found_shame": 1,
+    "found_privacy": 1,
+    "safe_item_clicked": 6
+  },
+  "history": [
+    {
+      "action": "found_timer",
+      "detail": "Found trap: timer",
+      "timestamp": "2026-10-25T03:03:04.966Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:03:12.698Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:03:42.759Z"
+    },
+    {
+      "action": "found_hidden",
+      "detail": "Found trap: hidden",
+      "timestamp": "2026-10-25T03:04:17.760Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:04:22.284Z"
+    },
+    {
+      "action": "open_privacy_modal",
+      "detail": "Opened the privacy trap modal",
+      "timestamp": "2026-10-25T03:05:33.252Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:05:55.169Z"
+    },
+    {
+      "action": "open_shame_modal",
+      "detail": "Opened the confirmshaming trap modal",
+      "timestamp": "2026-10-25T03:06:09.060Z"
+    },
+    {
+      "action": "found_shame",
+      "detail": "Found trap: shame",
+      "timestamp": "2026-10-25T03:06:24.990Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:06:36.665Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:07:15.579Z"
+    },
+    {
+      "action": "found_scarcity",
+      "detail": "Found trap: scarcity",
+      "timestamp": "2026-10-25T03:07:25.254Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:07:35.530Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:09:17.455Z"
+    },
+    {
+      "action": "open_privacy_modal",
+      "detail": "Opened the privacy trap modal",
+      "timestamp": "2026-10-25T03:09:27.938Z"
+    },
+    {
+      "action": "open_privacy_modal",
+      "detail": "Opened the privacy trap modal",
+      "timestamp": "2026-10-25T03:09:39.553Z"
+    },
+    {
+      "action": "found_privacy",
+      "detail": "Found trap: privacy",
+      "timestamp": "2026-10-25T03:09:42.747Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:09:46.899Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:09:48.899Z"
+    },
+    {
+      "action": "safe_item_clicked",
+      "detail": "Clicked a safe item",
+      "timestamp": "2026-10-25T03:10:02.067Z"
+    },
+    {
+      "action": "found_sneak",
+      "detail": "Found trap: sneak",
+      "timestamp": "2026-10-25T03:10:22.681Z"
+    },
+    {
+      "action": "close_explanation",
+      "detail": "Closed explanation for a trap",
+      "timestamp": "2026-10-25T03:10:26.814Z"
+    },
+    {
+      "action": "finish_education",
+      "detail": "Completed all traps and moving to test phase",
+      "timestamp": "2026-10-25T03:10:46.860Z"
+    }
+  ]
+}

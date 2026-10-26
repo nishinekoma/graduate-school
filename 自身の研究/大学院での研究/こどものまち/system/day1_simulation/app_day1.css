@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#app-viewport {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* 呼び出した部品画面（iframe）の表示エリア */
+#component-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>実験の種明かし</title>
+    <!-- CSSは共通のものを利用しますが、ルビ対策のスタイルをここで上書きします -->
+    <link rel="stylesheet" href="../feedback_phase/feedback.css">
+    <style>
+        /* ルビが重ならないように行間を広げる調整 */
+        .explanation-box p {
+            line-height: 2.2 !important; /* 行間を広げてルビのスペースを確保 */
+            margin-bottom: 15px !important;
+        }
+        .step-heading {
+            line-height: 1.8 !important;
+        }
+    </style>
+</head>
+<body>
+<div id="feedback-container">
+    <header class="header-area">
+        <h2 id="main-header-title">🔎 実は...最後もかくれテストだったんだ！</h2>
+    </header>
+
+    <!-- ステップ1：種明かし＆罠の位置 -->
+    <div id="step-1" class="step-card active">
+        <h3 id="step1-heading" class="step-heading">おかし<ruby>選<rt>えら</rt></ruby>びにも、<ruby>罠<rt>わな</rt></ruby>が<ruby>隠<rt>かく</rt></ruby>れていたよ。</h3>
+        <div id="trap-preview-area"></div>
+    </div>
+
+    <!-- ステップ2：罠の詳しい解説 -->
+    <div id="step-2" class="step-card">
+        <h3 id="step2-heading" class="step-heading">どこが「<ruby>罠<rt>わな</rt></ruby>」だったのかな？</h3>
+        <div id="step2-body" class="explanation-box"></div>
+    </div>
+
+    <!-- ステップ3：最終完了画面 -->
+    <div id="step-3" class="step-card">
+        <h3 id="step3-heading" class="step-heading"><ruby>実験<rt>じっけん</rt></ruby>おつかれさま！</h3>
+        <div id="step3-body"></div>
+        <div class="payout-box">
+            <span class="payout-label" id="final-reward-text">おかしを受け取ろう！</span>
+        </div>
+    </div>
+
+    <div class="nav-area">
+        <button id="prev-btn" class="nav-btn prev-btn" onclick="prevStep()" style="display: none;">⬅ もどる</button>
+        <button id="next-btn" class="nav-btn next-btn" onclick="nextStep()" style="display: none;">つぎへ ➡</button>
+    </div>
+</div>
+<script src="1017_feedback.js"></script>
+</body>
+</html>

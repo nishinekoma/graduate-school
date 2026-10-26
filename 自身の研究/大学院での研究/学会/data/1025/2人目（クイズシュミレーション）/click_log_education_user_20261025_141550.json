@@ -1,0 +1,86 @@
+{
+  "participant_id": "user_20261025_141550",
+  "survey_attributes": {
+    "participant_id": "user_20261025_141550",
+    "submitted_at": "2026-10-25T05:15:50.178Z",
+    "age": "11",
+    "grade": "5",
+    "gender": "male",
+    "search_freq": "daily",
+    "device_own": "shared",
+    "game_freq": "played"
+  },
+  "phase": "day2_education",
+  "start_time": "2026-10-25T05:17:01.103Z",
+  "counts": {
+    "correct_answers": 6,
+    "wrong_answers": 0
+  },
+  "history": [
+    {
+      "action": "load_question_hidden",
+      "detail": "Loaded question: hidden",
+      "timestamp": "2026-10-25T05:17:01.104Z"
+    },
+    {
+      "action": "correct_answer_hidden",
+      "detail": "Correct answer for hidden",
+      "timestamp": "2026-10-25T05:17:19.582Z"
+    },
+    {
+      "action": "load_question_timer",
+      "detail": "Loaded question: timer",
+      "timestamp": "2026-10-25T05:17:24.456Z"
+    },
+    {
+      "action": "correct_answer_timer",
+      "detail": "Correct answer for timer",
+      "timestamp": "2026-10-25T05:17:38.355Z"
+    },
+    {
+      "action": "load_question_sneak",
+      "detail": "Loaded question: sneak",
+      "timestamp": "2026-10-25T05:17:43.356Z"
+    },
+    {
+      "action": "correct_answer_sneak",
+      "detail": "Correct answer for sneak",
+      "timestamp": "2026-10-25T05:17:53.282Z"
+    },
+    {
+      "action": "load_question_scarcity",
+      "detail": "Loaded question: scarcity",
+      "timestamp": "2026-10-25T05:17:57.783Z"
+    },
+    {
+      "action": "correct_answer_scarcity",
+      "detail": "Correct answer for scarcity",
+      "timestamp": "2026-10-25T05:18:11.212Z"
+    },
+    {
+      "action": "load_question_shame",
+      "detail": "Loaded question: shame",
+      "timestamp": "2026-10-25T05:18:15.461Z"
+    },
+    {
+      "action": "correct_answer_shame",
+      "detail": "Correct answer for shame",
+      "timestamp": "2026-10-25T05:18:44.810Z"
+    },
+    {
+      "action": "load_question_privacy",
+      "detail": "Loaded question: privacy",
+      "timestamp": "2026-10-25T05:18:49.378Z"
+    },
+    {
+      "action": "correct_answer_privacy",
+      "detail": "Correct answer for privacy",
+      "timestamp": "2026-10-25T05:19:04.535Z"
+    },
+    {
+      "action": "finish_education",
+      "detail": "Completed quiz and moving to test phase",
+      "timestamp": "2026-10-25T05:19:11.280Z"
+    }
+  ]
+}

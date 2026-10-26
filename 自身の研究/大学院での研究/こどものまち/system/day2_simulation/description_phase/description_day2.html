@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おしごとのせつめい (Day 2)</title>
+    <link rel="stylesheet" href="description.css">
+</head>
+<body>
+
+<div id="presentation-container">
+    
+    <!-- スライド1：ECサイトの仕組み -->
+    <div class="slide active" data-step="0">
+        <h2>インターネットでの おかいもの</h2>
+        <p>インターネットで「<ruby>買<rt>か</rt></ruby>う」ボタンを<ruby>押<rt>お</rt></ruby>すと、どうなるかな？</p>
+        
+        <div class="visual-flow">
+            <div class="flow-item"><div class="icon-box">🖱</div><p>ボタンを<ruby>押<rt>お</rt></ruby>す</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">💳</div><p>ほんとうのお<ruby>金<rt>かね</rt></ruby>をはらう</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">🚚</div><p><ruby>品物<rt>しなもの</rt></ruby>がとどく</p></div>
+        </div>
+        <p class="warning-text">ゲームのコインではなく、<strong>ほんとうのお<ruby>金<rt>かね</rt></ruby>がへってしまう</strong>んだ。</p>
+    </div>
+
+    <!-- スライド2：ダークパターンとは -->
+    <div class="slide" data-step="1">
+        <h2>わるい<ruby>表示<rt>ひょうじ</rt></ruby>（ダークパターン）とは？</h2>
+        <p>インターネットには、<strong>ほんとうは<ruby>買<rt>か</rt></ruby>うつもりがなかったのに、<br>つい<ruby>買<rt>か</rt></ruby>ってしまうように<ruby>作<rt>つく</rt></ruby>られた<ruby>罠<rt>わな</rt></ruby></strong>があるよ。</p>
+        
+        <div class="visual-flow">
+            <div class="trap-card">
+                <div class="icon-box">⏳</div>
+                <p>「あと10秒！」と<ruby>焦<rt>あせ</rt></ruby>らせる</p>
+            </div>
+            <div class="trap-card">
+                <div class="icon-box">🔍</div>
+                <p>お<ruby>金<rt>かね</rt></ruby>にかかわることを<br>すごく小さく<ruby>書<rt>か</rt></ruby>く</p>
+            </div>
+        </div>
+        <p class="warning-text">「タダ（無料）」だと思わせたり、<strong><ruby>気<rt>き</rt></ruby>づかないうちにお<ruby>金<rt>かね</rt></ruby>をとろうとする</strong><br>わるい<ruby>罠<rt>わな</rt></ruby>を「ダークパターン」とよぶんだ。</p>
+    </div>
+
+    <!-- スライド3：Day2用 クイズの解き方説明 -->
+    <div class="slide" data-step="2">
+        <h2>クイズの やりかた 📝</h2>
+        <p>これから、あやしい画面についての<strong>「クイズ」</strong>が出題されるよ！</p>
+        
+        <div class="mission-box" style="background: #e1f5fe; border-color: #0288d1; text-align: left;">
+            <h3 style="color: #0288d1; text-align: center;">💡 クイズの進め方</h3>
+            <p>① 画面やカードをよく見て、<strong>どこがズルい罠（あやしい場所）か</strong>考えよう！</p>
+            <p>② 下にあるボタンの中から、<strong>「これが正しい！」と思う答え</strong>を選んで押して ね！</p>
+            <p>③ 正解すると、その罠の「くわしい解説」が見られるよ ね！</p>
+        </div>
+    </div>
+
+    <!-- スライド4：Day2用 ミッション説明 -->
+    <div class="slide" data-step="3">
+        <h2>きみの おしごと 🚔</h2>
+        <p>きみは今日から、わるい<ruby>罠<rt>わな</rt></ruby>をみつける<strong>「ネットパトロール屋さん」</strong>だ！</p>
+        
+        <div class="mission-box">
+            <h3>📝 ミッション</h3>
+            <p>これから、おかいものサイトのクイズパトロールをするよ。</p>
+            <p>みんなをだまして、お<ruby>金<rt>かね</rt></ruby>をとろうとする<strong>「ズルい<ruby>誘導<rt>ゆうどう</rt></ruby>（わな）」</strong>のクイズに挑戦しよう！</p>
+            <p>全6問のクイズを解いて、パトロール任務を完了させよう！</p>
+        </div>
+    </div>
+
+    <!-- ナビゲーションボタン -->
+    <div class="nav-buttons">
+        <button id="prev-btn" class="nav-btn" onclick="changeSlide(-1)" style="visibility: hidden;">⬅ もどる</button>
+        <button id="next-btn" class="nav-btn next" onclick="changeSlide(1)">つぎへ ➡</button>
+    </div>
+
+</div>
+
+<script src="description.js"></script>
+</body>
+</html>

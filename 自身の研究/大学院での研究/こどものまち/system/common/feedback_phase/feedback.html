@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お仕事の結果 ｜ こどものまち</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<div id="feedback-container">
+    <header class="header-area">
+        <h2 id="main-header-title">🚔 お<ruby>仕事<rt>しごと</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby></h2>
+    </header>
+
+    <!-- ステップ1：種明かし＆罠の位置（正解時もここで完結） -->
+    <div id="step-1" class="step-card active">
+        <h3 id="step1-heading" class="step-heading">実は…<ruby>最後<rt>さいご</rt></ruby>も「かくれテスト」だったんだ！</h3>
+        <p id="step1-subtext" class="step-subtext">お<ruby>給料<rt>きゅうりょう</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶところにも、わるい<ruby>罠<rt>わな</rt></ruby>が<ruby>隠<rt>かく</rt></ruby>れていたよ。</p>
+        <div id="trap-preview-area"></div>
+        <div id="step1-payout-area"></div>
+    </div>
+
+    <!-- ステップ2：罠の詳しい解説 -->
+    <div id="step-2" class="step-card">
+        <h3 id="step2-heading" class="step-heading"></h3>
+        <div id="step2-body" class="explanation-box"></div>
+    </div>
+
+    <!-- ステップ3：心理的配慮 ＆ 報酬受け取り -->
+    <div id="step-3" class="step-card">
+        <h3 id="step3-heading" class="step-heading"></h3>
+        <div id="step3-body"></div>
+        <div class="payout-box">
+            <span class="payout-label">今日のお<ruby>給料<rt>きゅうりょう</rt></ruby>：</span>
+            <span class="payout-amount">300<span class="unit">k</span></span>
+        </div>
+    </div>
+
+    <!-- ナビゲーションボタンエリア（左右配置） -->
+    <div class="nav-area">
+        <button id="prev-btn" class="nav-btn prev-btn" onclick="prevStep()" style="display: none;">⬅ もどる</button>
+        <button id="next-btn" class="nav-btn next-btn" onclick="nextStep()" style="display: none;" disabled>つぎへ ➡</button>
+    </div>
+</div>
+
+<script src="feedback.js"></script>
+</body>
+</html>

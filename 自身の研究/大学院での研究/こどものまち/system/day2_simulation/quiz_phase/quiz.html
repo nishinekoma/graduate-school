@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ネットパトロール クイズ学習</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div id="quiz-container">
+    
+    <!-- ヘッダーエリア -->
+    <div id="quiz-header">
+        <div class="header-title">🚔 ネットパトロール クイズ演習</div>
+        <div class="progress-badge">第 <span id="current-q-num">1</span> 問 / 全 6 問</div>
+    </div>
+
+    <!-- 左右分割レイアウト -->
+    <div id="quiz-card" class="quiz-layout">
+        
+        <!-- 左パネル：問題文章 ＋ 選択肢ボタン -->
+        <div class="left-panel">
+            <div class="mascot-box">
+                <div class="question-text" id="question-text">
+                    <!-- JSで動的挿入 -->
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-grid">
+                <!-- JSで動的挿入 -->
+            </div>
+        </div>
+
+        <!-- 右パネル：商品カード -->
+        <div class="right-panel">
+            <div class="scenario-visual" id="scenario-visual">
+                <!-- JSで動的挿入 -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 正解解説モーダル -->
+    <div id="explanation-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content success-box">
+            <h3>🎉 大正解！</h3>
+            <p class="explanation-body" id="explanation-text"></p>
+            <button id="next-q-btn" class="next-btn" onclick="nextQuestion()" style="display: none;" disabled>
+                つぎの問題へ ➡
+            </button>
+        </div>
+    </div>
+
+    <!-- 不正解モーダル -->
+    <div id="wrong-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content wrong-box">
+            <h3>💡 惜しい！ もう一度 考えてみよう！</h3>
+            <div class="wrong-body" id="wrong-reason-text">
+                <!-- JSで理由テキストを挿入 -->
+            </div>
+            <button class="retry-btn" onclick="closeWrongModal()">もう一度 チャレンジ 🔄</button>
+        </div>
+    </div>
+
+    <!-- クイズクリア画面 -->
+    <div id="clear-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content clear-box">
+            <h3>🏆 クイズパトロール <ruby>完了<rt>かんりょう</rt></ruby>！</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+                6つのズルい<ruby>罠<rt>わな</rt></ruby>を すべて見破ることができたね！<br>
+                これで<ruby>罠<rt>わな</rt></ruby>の知識はバッチリだね！
+            </p>
+            <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+                今日のお仕事はこれでおしまい！<br>
+                <strong>さあ、君の「<ruby>報酬<rt>ほうしゅう</rt></ruby>」を受け取りに行こう！</strong>
+            </p>
+            <button class="next-btn start-btn" onclick="goToNextPhase()">
+                <ruby>報酬<rt>ほうしゅう</rt></ruby>を受け取るページへ 🚀
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

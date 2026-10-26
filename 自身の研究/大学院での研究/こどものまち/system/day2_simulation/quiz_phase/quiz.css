@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #1a103c;
+    color: #ffffff;
+    margin: 0;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 紫色の親コンテナ */
+#quiz-container {
+    width: 92vw;
+    max-width: 1000px;
+    height: 85vh;
+    background: #2b1b54;
+    border: 4px solid #5c3c92;
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ヘッダーエリア */
+#quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #5c3c92;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #4db6ac;
+}
+
+.progress-badge {
+    background: #ffd54f;
+    color: #1a103c;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 1.05em;
+}
+
+/* 左右レイアウト */
+.quiz-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
+}
+
+/* 左パネル（問題文 ＋ 選択肢） */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mascot-box {
+    display: flex;
+    align-items: center;
+    background: #3b246c;
+    padding: 18px 22px;
+    border-radius: 14px;
+    border-left: 6px solid #ffd54f;
+}
+
+.question-text {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opt-btn {
+    background: #4a2e80;
+    color: #ffffff;
+    border: 3px solid #7e57c2;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    line-height: 1.7;
+}
+
+.opt-btn:hover {
+    background: #5e35b1;
+    border-color: #ffd54f;
+    transform: translateY(-2px);
+}
+
+/* 右パネル（商品カードエリア） */
+.right-panel {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    height: 100%;
+}
+
+.scenario-visual {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 18px;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* モーダル共通 */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    color: #333333;
+    padding: 30px 35px;
+    border-radius: 18px;
+    max-width: 580px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+.success-box {
+    border: 5px solid #66bb6a;
+    background: #e8f5e9;
+}
+
+.success-box h3 {
+    color: #2e7d32;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.explanation-body {
+    font-size: 1.15em;
+    line-height: 1.85;
+    color: #333333;
+    margin: 15px 0 25px 0;
+    text-align: center;
+}
+
+.wrong-box {
+    border: 5px solid #ef5350;
+    background: #ffebee;
+}
+
+.wrong-box h3 {
+    color: #c62828;
+    font-size: 1.45em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.wrong-body {
+    font-size: 1.15em;
+    line-height: 1.85;
+    color: #333333;
+    margin: 15px 0 25px 0;
+    text-align: center;
+}
+
+.clear-box {
+    border: 5px solid #ffa726;
+    background: #fffde7;
+}
+
+.clear-box h3 {
+    color: #ef6c00;
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+/* ボタン類 */
+.next-btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.retry-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(211, 47, 47, 0.3);
+}
+
+.start-btn {
+    background: #ef6c00 !important;
+    font-size: 1.25em;
+    box-shadow: 0 4px 10px rgba(239, 108, 0, 0.4);
+}
+
+/* ルビのスタイル設定 */
+ruby {
+    ruby-align: center;
+}
+
+rt {
+    font-size: 0.55em;
+    font-weight: normal;
+    color: #ffffff; /* 👈 ルビの色を白に変更 */
+}
+
+/* リトライボタンのフェード表示設定 */
+.retry-btn {
+    transition: opacity 0.5s ease; /* ふわっと変化させるアニメーション */
+    opacity: 1;
+}
+
+.retry-btn.fade-hidden {
+    opacity: 0;                   /* 透明にする */
+    pointer-events: none;         /* クリック不可にする */
+}
+
+/* 白背景のモーダル内でのルビは読みやすい暗い灰色に */
+.modal-content rt {
+    color: #555555;
+}

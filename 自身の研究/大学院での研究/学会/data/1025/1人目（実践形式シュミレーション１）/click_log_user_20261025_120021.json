@@ -1,0 +1,44 @@
+{
+  "participant_id": "user_20261025_120021",
+  "survey_attributes": {
+    "participant_id": "user_20261025_120021",
+    "submitted_at": "2026-10-25T03:00:21.102Z",
+    "age": "8",
+    "grade": "3",
+    "gender": "male",
+    "search_freq": "frequent",
+    "device_own": "shared",
+    "game_freq": "never"
+  },
+  "start_time": "2026-10-25T03:10:47.484Z",
+  "counts": {
+    "mix": 0,
+    "choco": 2,
+    "gorgeous": 0,
+    "cancel": 1,
+    "upsell_shown": 0,
+    "changed_to_gorgeous": 0
+  },
+  "history": [
+    {
+      "action": "choco",
+      "detail": "Opened modal for choco",
+      "timestamp": "2026-10-25T03:11:47.880Z"
+    },
+    {
+      "action": "cancel",
+      "detail": "Cancelled choco",
+      "timestamp": "2026-10-25T03:11:49.944Z"
+    },
+    {
+      "action": "choco",
+      "detail": "Opened modal for choco",
+      "timestamp": "2026-10-25T03:13:27.266Z"
+    },
+    {
+      "action": "confirm",
+      "detail": "Final choice: choco",
+      "timestamp": "2026-10-25T03:13:29.623Z"
+    }
+  ]
+}

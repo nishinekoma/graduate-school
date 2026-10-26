@@ -1,0 +1,50 @@
+{
+  "participant_id": "user_20261004_120847",
+  "survey_attributes": {
+    "participant_id": "user_20261004_120847",
+    "submitted_at": "2026-10-04T03:08:47.403Z",
+    "age": "12",
+    "grade": "6",
+    "gender": "male",
+    "search_freq": "rarely",
+    "device_own": "own",
+    "game_freq": "wanted_to_play"
+  },
+  "start_time": "2026-10-04T03:11:33.713Z",
+  "counts": {
+    "300k": 1,
+    "400k": 1,
+    "500k": 0,
+    "cancel": 1,
+    "upsell_shown": 1,
+    "changed_to_500k": 0
+  },
+  "history": [
+    {
+      "action": "400k",
+      "detail": "Opened modal for 400k",
+      "timestamp": "2026-10-04T03:11:58.053Z"
+    },
+    {
+      "action": "cancel",
+      "detail": "Cancelled 400k",
+      "timestamp": "2026-10-04T03:12:21.222Z"
+    },
+    {
+      "action": "300k",
+      "detail": "Opened modal for 300k",
+      "timestamp": "2026-10-04T03:12:23.030Z"
+    },
+    {
+      "action": "upsell_shown",
+      "detail": "Showed second upsell modal for 300k",
+      "timestamp": "2026-10-04T03:12:29.806Z"
+    },
+    {
+      "action": "confirm",
+      "detail": "Final choice: 300k",
+      "timestamp": "2026-10-04T03:12:34.241Z"
+    }
+  ]
+}
+// day1

@@ -1,0 +1,25 @@
+■リポジトリ：https://github.com/webapp-advanced/webapp2026
+  西村：student007のディレクトリに手作業
+Logはメモ
+research-map-before.md
+
+第二回アーキテクチャどうするか
+  。
+  prompt
+    わからなければ推論でなく調べるの必須で。推論ならそのうえで。
+
+  どこでなにするか
+
+  NoSQL
+  
+  MongoDB
+
+
+  NoSQL、 MongoDB　などのDBごとによってできることや守れることが変わる。
+
+秋山先生に
+
+
+斎藤先生、直接指導している場合、論文の連盟に入れるかどうかを先生に共著の人には
+連絡しないといけない。
+

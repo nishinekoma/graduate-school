@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+#presentation-container {
+    background: white;
+    width: 92%;
+    max-width: 850px;
+    min-height: 620px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    padding: 35px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    display: none;
+    flex-grow: 1;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    font-size: 2em;
+    color: #00796b;
+    border-bottom: 3px dashed #4db6ac;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+p { font-size: 1.2em; line-height: 1.6; margin: 12px 0; }
+ruby { ruby-align: center; }
+rt { font-size: 0.5em; color: #666; }
+
+/* 図解レイアウト */
+.visual-flow {
+    display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;
+}
+.flow-item {
+    background: #f5f5f5; padding: 15px; border-radius: 10px; width: 150px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.trap-card {
+    background: #ffebee; border: 2px solid #ef5350; padding: 15px; 
+    border-radius: 10px; width: 230px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.icon-box { font-size: 3em; margin-bottom: 10px; }
+.arrow { font-size: 2em; color: #00796b; font-weight: bold; }
+.warning-text {
+    font-size: 1.1em; color: #d32f2f; background: #fff8e1;
+    display: inline-block; padding: 10px 20px; border-radius: 5px; font-weight: bold;
+}
+
+/* チュートリアルカウントバッジ */
+.count-badge {
+    display: inline-block;
+    background: #e0f2f1;
+    color: #00796b;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 15px;
+    font-size: 1em;
+    margin-top: 4px;
+}
+
+/* 🛒 チュートリアル用商品カード2枚並び */
+.tutorial-card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 15px auto;
+    min-height: 290px;
+    align-items: center;
+}
+
+.item-card {
+    border: 1px solid #e0e0e0;
+    padding: 14px;
+    border-radius: 12px;
+    background: #fff;
+    width: 245px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item-img {
+    width: 100%;
+    height: 135px;
+    background-color: #eceff1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-name { font-size: 0.95em; font-weight: bold; margin: 0 0 6px 0; }
+
+.item-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: baseline;
+}
+.old-price {
+    color: #999;
+    font-size: 0.85em;
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+.current-price {
+    color: #333;
+    font-weight: bold;
+}
+.badge { background: #d32f2f; color: white; font-size: 0.65em; padding: 3px 6px; border-radius: 3px; vertical-align: middle; margin-left: 6px; }
+
+.trap-area {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trap-target {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    width: 100%;
+    box-sizing: border-box;
+}
+.trap-target:hover {
+    background-color: #fff8e1;
+}
+
+.hidden-text {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.35;
+    margin: 0;
+    text-align: left;
+}
+
+.discount-text {
+    font-size: 0.9em;
+    color: #d32f2f;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 2px 0;
+}
+
+.cart-btn {
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+    margin-top: auto;
+    pointer-events: none;
+}
+
+/* 10秒後のヒント点滅アニメーション */
+.hint-blink {
+    animation: gentleBlink 1.2s infinite ease-in-out;
+    border: 2px solid #ff9800 !important;
+    background-color: #fffde7 !important;
+}
+
+@keyframes gentleBlink {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.02); }
+}
+
+/* 発見済み状態 */
+.trap-target.found {
+    animation: none;
+    opacity: 0.5;
+    pointer-events: none;
+    border: 2px solid #2e7d32 !important;
+    background-color: #e8f5e9 !important;
+}
+
+/* 🟢 解説メッセージ（文字色をすべて黒 #333 に統一） */
+.success-msg { 
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1.05em;
+    animation: fadeIn 0.3s; 
+    background: #e8f5e9;
+    border: 2px solid #66bb6a;
+    padding: 15px;
+    border-radius: 12px; 
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.success-msg p { margin: 4px 0; }
+
+/* 本文の文字色を黒（#333）へ設定 */
+.success-msg .explanation {
+    font-size: 1em;
+    color: #333 !important;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+.resume-btn {
+    margin-top: 12px;
+    background-color: #ef6c00;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.resume-btn:hover {
+    background-color: #e65100;
+}
+
+.mission-box {
+    background: #e8f5e9; border: 3px solid #66bb6a; padding: 20px; border-radius: 10px;
+    margin: 15px auto; width: 85%;
+}
+.mission-box h3 { margin-top: 0; color: #2e7d32; }
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px; 
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.nav-btn {
+    font-size: 1.15em;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    background-color: #0288d1;
+    color: white;
+}
+.nav-btn:hover:not(:disabled) { background-color: #0277bd; }
+
+.nav-btn:disabled {
+    background-color: #cccccc !important;
+    color: #888888 !important;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    background-color: #ef6c00 !important;
+    font-size: 1.25em;
+    box-shadow: 0 4px 10px rgba(239, 108, 0, 0.4);
+}
+.start-btn:hover:not(:disabled) { background-color: #e65100 !important; transform: scale(1.03); }

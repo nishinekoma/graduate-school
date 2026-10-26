@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お礼のおかし選び</title>
+    <!-- 既存のCSSを読み込み -->
+    <link rel="stylesheet" href="../test_phase/reward_test.css">
+    <style>
+        /* 追加: 画面上部の余白を削る */
+        #reward-container {
+            padding-top: 20px; 
+        }
+        .header-area h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* 追加: バッジ上部の余白を削る */
+        .badge-area {
+            height: 30px; /* 元の48pxから縮小 */
+            align-items: flex-end;
+            padding-bottom: 5px;
+        }
+
+        /* 今回用の追加・上書きスタイル */
+        .reward-card {
+            align-items: flex-start;
+            padding: 15px;
+        }
+        
+        .reward-img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            margin-bottom: 15px; 
+            border-radius: 8px; 
+            background: #f9f9f9;
+        }
+        
+        .card-text-area {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 15px;
+            flex-grow: 1; 
+        }
+        
+        .product-name {
+            font-size: 1.1em; 
+            margin: 0 0 0px 0;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .product-desc {
+            font-size: 0.75em;
+            color: #555;
+            margin: 0;
+            line-height: 1.5;
+            font-weight: normal; 
+        }
+        
+        .reward-amount-box { display: none; }
+    </style>
+</head>
+<body>
+
+<div id="reward-container">
+    <header class="header-area">
+        <h2>実験に<ruby>協力<rt>きょうりょく</rt></ruby>してくれてありがとう！</h2>
+        <p class="subtitle">お礼のおかしを１つ<ruby>選<rt>えら</rt></ruby>んでね！</p>
+    </header>
+
+    <div class="reward-grid">
+        <div class="reward-card" onclick="openModal('mix')">
+            <div class="badge-area"></div>
+            <img src="images/snack_mix.jpg" alt="お菓子ミックス" class="reward-img">
+            <div class="card-text-area">
+                <p class="product-name">ミックスセット</p>
+                <p class="product-desc">ごちゃまぜで入っているよ。</p>
+            </div>
+            <button class="select-btn">これをもらう</button>
+        </div>
+
+        <!-- 【選択肢 2】 チョコレ～～～～ト！！！ -->
+        <div class="reward-card" onclick="openModal('choco')">
+            <div class="badge-area"></div>
+            <img src="images/choco_mountain.jpg" alt="山盛りチョコ" class="reward-img">
+            <div class="card-text-area">
+                <p class="product-name">チョコレ～～～～ト！！！</p>
+                <p class="product-desc">
+                    チョコが大好きな人におすすめのセットです。個数1つ
+                </p>
+            </div>
+            <button class="select-btn">これをもらう</button>
+        </div>
+
+        <div class="reward-card highlight-card" onclick="openModal('gorgeous')">
+            <div class="badge-area">
+                <div class="social-proof-badge">🔥 人気No.1！ みんなこれを選んでいます！</div>
+            </div>
+            <img src="images/gorgeous_set.jpg" alt="豪華お菓子セット" class="reward-img">
+            <div class="card-text-area">
+                <!-- ルビを完全廃止して自然なテキストに -->
+                <p class="product-name">豪華おかし</p>
+                <p class="product-desc">
+                    みんなに一番人気のスペシャルセット！<br>
+                    最初の1か月無料！毎月おかしが届くプレミアム会員になれる！
+                </p>
+            </div>
+            <button class="select-btn highlight-btn">これをもらう</button>
+        </div>
+    </div>
+</div>
+
+<div id="confirm-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h3 id="modal-title" class="warning-title">確認</h3>
+        <div id="modal-body" class="confirm-msg"></div>
+        <div class="modal-buttons" id="modal-buttons">
+            <button id="modal-cancel-btn" class="modal-btn back-btn" onclick="closeConfirmModal()">やめる ↩️</button>
+            <button id="modal-submit-btn" class="modal-btn confirm-btn" onclick="handlePrimarySubmit()">はい、決定する！</button>
+        </div>
+    </div>
+</div>
+
+<script src="1017_reward.js"></script>
+</body>
+</html>
+<!-- 最初の1か月無料　特典内容を描く。報酬フェーズのサブスク内容をもうちょい具体的にする。 -->
+<!-- 調べておく　インタビューしていい？、録音していい？（聞く前でそのことも録音する。） 
+     インフォームドアセント（保護者いない場合、本人にこういうことしたいんだけど、いい？みたいな。）　-->

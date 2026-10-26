@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事前アンケート ｜ こどものまち</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+<div id="survey-container">
+    <h2>📝 はじめるまえの アンケート</h2>
+    <p class="subtitle">あてはまるものを えらんでね！</p>
+
+    <form id="survey-form">
+        <!-- 1. 年齢 -->
+        <div class="form-group">
+            <label for="age">1. 年齢（ねんれい）</label>
+            <select id="age" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="7">7さい</option>
+                <option value="8">8さい</option>
+                <option value="9">9さい</option>
+                <option value="10">10さい</option>
+                <option value="11">11さい</option>
+                <option value="12">12さい</option>
+            </select>
+        </div>
+
+        <!-- 2. 学年 -->
+        <div class="form-group">
+            <label for="grade">2. 学年（がくねん）</label>
+            <select id="grade" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="1">小学 1 年生</option>
+                <option value="2">小学 2 年生</option>
+                <option value="3">小学 3 年生</option>
+                <option value="4">小学 4 年生</option>
+                <option value="5">小学 5 年生</option>
+                <option value="6">小学 6 年生</option>
+                <option value="7">中学 1 年生</option>
+            </select>
+        </div>
+
+        <!-- 3. 性別 -->
+        <div class="form-group">
+            <label for="gender">3. 性別（せいべつ）</label>
+            <select id="gender" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="male">おとこのこ</option>
+                <option value="female">おんなのこ</option>
+                <option value="other">その他</option>
+            </select>
+        </div>
+
+        <!-- 4. ネット検索頻度 -->
+        <div class="form-group">
+            <label for="search_freq">4. ふだん、スマホやパソコンで 何かしらべたりする？</label>
+            <select id="search_freq" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="daily">毎日（まいにち）する</option>
+                <option value="frequent">たまにする</option>
+                <option value="rarely">あまりしない</option>
+                <option value="never">ぜんぜんしない</option>
+            </select>
+        </div>
+
+        <!-- 5. 端末所持 -->
+        <div class="form-group">
+            <label for="device_own">5. 自分だけの スマホ・タブレット・ゲーム機を持っている？</label>
+            <select id="device_own" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="own">自分だけのものを持っている</option>
+                <option value="shared">家族といっしょに使っている</option>
+                <option value="none">持っていない</option>
+            </select>
+        </div>
+
+        <!-- 6. ゲームプレイ体験 -->
+        <div class="form-group">
+            <label for="game_freq">6. ゲーム内でかいものしたことある？</label>
+            <select id="game_freq" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="played">したことある</option>
+                <option value="wanted_to_play">したいと思ったことがある</option>
+                <option value="never">ない</option>
+                <option value="rarely_play">あまりゲームは遊ばない。</option>
+            </select>
+        </div>
+
+        <!-- 7. 【追加】家族のネットショッピング体験 -->
+        <div class="form-group">
+            <label for="family_shopping">7. あなたの家族（かぞく）は ネットでお買いものをしている？</label>
+            <select id="family_shopping" required>
+                <option value="" disabled selected>えらんでね</option>
+                <option value="often">よく買っている</option>
+                <option value="sometimes">たまに買っている</option>
+                <option value="never">ぜんぜん買っていない</option>
+                <option value="unknown">わからない</option>
+            </select>
+        </div>
+
+        <button type="submit" class="start-btn">スタートする 🚀</button>
+    </form>
+</div>
+
+<script src="survey.js"></script>
+</body>
+</html>

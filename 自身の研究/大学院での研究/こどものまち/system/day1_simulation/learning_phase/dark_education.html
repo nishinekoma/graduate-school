@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>モンスターカード・オンライン ｜ ネットパトロール演習</title>
+    <link rel="stylesheet" href="dark_education.css">
+</head>
+<body>
+
+<div id="patrol-ui">
+    <div class="patrol-header">🚔 ネットパトロール中</div>
+    <div class="mission-text">ミッション：サイトに隠れた「6つ」のわるい罠をクリックで報告せよ！ <span id="progress-text">（0 / 6）</span></div>
+</div>
+
+<div id="shop-area">
+    <header>
+        <div class="shop-logo">⚡️ MONSTER CARD ONLINE</div>
+        <div class="shop-nav">🔍 検索 👤 ログイン 🛒 カート(0)</div>
+    </header>
+
+    <div class="category-bar">
+        <span>🔴 モンスターから探す</span>
+        <span>📋 カテゴリから探す</span>
+        <span>✨ 新商品</span>
+        <span>👑 ランキング</span>
+    </div>
+
+    <div id="main-content">
+        <h2>商品一覧 (1〜12件 / 全189件)</h2>
+        
+        <div class="product-grid">
+            
+            <!-- ① 隠ぺい型（視覚的干渉） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/sleeve.jpg" alt="限定スリーブ画像">
+                </div>
+                <p class="item-name">限定スリーブ ピカピカ版</p>
+                <p class="item-price">100円 <span class="badge">特価</span></p>
+                <p class="trap-target hidden-text" onclick="findTrap('hidden', this)">※毎分3,000円の自動定期購入コースに登録されます。</p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ② 偽の緊急性（タイマー） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/pack_phantom.jpg" alt="幻のパック画像">
+                </div>
+                <p class="item-name">拡張パック「幻の華導」</p>
+                <p class="item-price">500円</p>
+                <p class="trap-target fake-timer" onclick="findTrap('timer', this)">販売終了まで残り <span id="countdown-timer">03:52</span></p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- 安全な商品（ダミー） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/case_std.jpg" alt="デッキケース画像">
+                </div>
+                <p class="item-name">スタンダードデッキケース</p>
+                <p class="item-price">600円</p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ③ スニークインバスケット（勝手に追加） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/case_dx.jpg" alt="特製ケース画像">
+                </div>
+                <p class="item-name">公式デッキケース（DX）</p>
+                <p class="item-price">800円</p>
+                <div class="trap-target sneak-options" onclick="findTrap('sneak', this)">
+                    <label><input type="checkbox" checked onclick="return false;"> お急ぎ便 (+500円)</label>
+                    <label><input type="checkbox" checked onclick="return false;"> ギフト包装 (+300円)</label>
+                </div>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ダミー（品切れ） -->
+            <div class="item-card sold-out">
+                <div class="item-img">
+                    <img src="../../common/images/pack_sord.jpg" alt="第1弾パック画像">
+                </div>
+                <p class="item-name">限定モデル「顕現の剣」</p>
+                <p class="item-price">150円</p>
+                <button class="cart-btn disabled">品切れ</button>
+            </div>
+
+            <!-- ④ 希少性（残り少ないと焦らせる） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/card_dragon1.jpg" alt="レアカード画像">
+                </div>
+                <p class="item-name">限定カード「伝説の古龍」</p>
+                <p class="item-price">1,500円</p>
+                <!-- 文言を希少性パターンに変更 -->
+                <p class="trap-target scarcity-trap" onclick="findTrap('scarcity', this)">
+                    <span style="display: inline-flex; justify-content: center; align-items: center; width: 18px; height: 18px; background-color: #d32f2f; color: white; border-radius: 50%; font-weight: bold; font-size: 12px; margin-right: 5px;">!</span>
+                    残りあと１個！
+                </p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- 安全な商品（ダミー） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/mat_blue.jpg" alt="プレイマット画像">
+                </div>
+                <p class="item-name">公式プレイマット（紺）</p>
+                <p class="item-price">2,500円</p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ⑤ コンファーム・シェイミング（罪悪感を煽る） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/super_lucky_bag.jpg" alt="福袋画像">
+                </div>
+                <p class="item-name">超！お得なスターター福袋</p>
+                <p class="item-price">3,000円</p>
+                <button class="cart-btn" onclick="showShameTrap()">カートに入れる</button>
+            </div>
+
+            <!-- 安全な商品（ダミー） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/Jade_Flower_Garden.jpg" alt="プレイマット画像">
+                </div>
+                <p class="item-name">カードパック 翠の花園</p>
+                <p class="item-price">2,500円</p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ⑥ プライバシーの強制（個人情報の要求） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/premium_Flame_Dragon_card.jpg" alt="プレミアムカード画像"> 
+                </div>
+                <p class="item-name">限定ホログラムカード 焔龍</p>
+                <p class="item-price">2,000円</p>
+                <button class="cart-btn" onclick="showPrivacyTrap()">カートに入れる</button>
+            </div>
+
+            <!-- 安全な商品（ダミー） -->
+            <div class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/Ancient_Dice.jpg" alt="ダイスセット画像">
+                </div>
+                <p class="item-name">古代のダイス</p>
+                <p class="item-price">1,200円</p>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- ダミー（品切れ） -->
+            <div class="item-card sold-out">
+                <div class="item-img">
+                    <img src="../../common/images/bigger_storage_box.jpg" alt="収納ボックス画像">
+                </div>
+                <p class="item-name">大容量ストレージボックス</p>
+                <p class="item-price">900円</p>
+                <button class="cart-btn disabled">品切れ</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ================= ポップアップ（モーダル）群 ================= -->
+
+<!-- ⑤ コンファーム・シェイミング用の罠画面 -->
+<div id="shame-modal" class="modal-overlay">
+    <div class="modal-content" style="text-align: center;">
+        <h3 style="color: #d32f2f; margin-top: 0px;">ちょっと待って！</h3>
+        <p style="margin-bottom: 20px;">今ならさらに豪華な「プレミアム福袋」に<br>アップグレードできます！</p>
+        <button class="cart-btn" style="margin-bottom: 0px;">アップグレードする（+2,000円）</button>
+        <br>
+        <a class="trap-target shame-trap" onclick="findTrap('shame', this); closeShameTrap();">いいえ、お得なのに断ります</a>
+    </div>
+</div>
+
+<!-- ⑥ プライバシー強制用の罠画面 -->
+<div id="privacy-modal" class="modal-overlay">
+    <div class="modal-content" style="text-align: center;">
+        <h3 style="color: #d32f2f; margin-top: 0;">＼今だけ90%OFF！／</h3>
+        <!-- 斜め線と巨大な赤文字の価格表示 -->
+        <p style="font-size: 1.2em; margin-bottom: 10px;">
+            <del style="color: #999;">2,000円</del> 
+            <span style="color: #d32f2f; font-size: 2em; font-weight: bold; margin-left: 10px;">180円</span>
+        </p>
+        <p style="margin-bottom: 20px;">特別割引を適用するには、電話番号を入力してください。</p>
+        
+        <!-- 罠の入力欄（ここをクリックで発見） ※readonlyを外しました -->
+        <div class="trap-target privacy-trap" onclick="findTrap('privacy', this); closePrivacyTrap();">
+            <p style="margin: 0 0 10px 0; font-weight: bold; color: #555;">電話番号を入力</p>
+            <input type="text" placeholder="☎ 090-XXXX-XXXX">
+        </div>
+        
+        <br>
+        <button class="cart-btn" style="margin-top: 20px; background: #999; border-color: #999; color: white; width: auto; padding: 10px 30px;" onclick="closePrivacyTrap()">閉じる</button>
+    </div>
+</div>
+
+<!-- 安全な商品のカート追加ポップアップ（ダミー） -->
+<div id="safe-cart-modal" class="modal-overlay">
+    <div class="modal-content" style="text-align: center;">
+        <h3 style="color: #333; margin-top: 0;">🛒 カートに追加しました</h3>
+        <p>この商品の周りには<br>罠（ダークパターン）は見当たらないようだ！<br>他のあやしい場所を探してみよう。</p>
+        <button class="cart-btn" style="background: #999; border-color: #999; color: white;" onclick="closeSafeCart()">閉じる</button>
+    </div>
+</div>
+
+<!-- 正解ポップアップ -->
+<div id="success-overlay" class="modal-overlay">
+    <div id="success-area" class="modal-content">
+        <h3 style="color: #2e7d32;">🎉 ダークパターン発見！</h3>
+        <p id="success-message"></p>
+        <button class="good-btn" onclick="closeSuccess()">パトロールを続ける</button>
+    </div>
+</div>
+
+<!-- ミッションクリアポップアップ -->
+<div id="clear-overlay" class="modal-overlay">
+    <div id="success-area" class="modal-content">
+        <h3 style="color: #d35400;">🏆 パトロール<ruby>任務<rt>にんむ</rt></ruby><ruby>完了<rt>かんりょう</rt></ruby>！</h3>
+        <p style="line-height: 2.0;">
+            すべての<ruby>罠<rt>わな</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけ<ruby>出<rt>だ</rt></ruby>したね！<br>
+            <ruby>君<rt>きみ</rt></ruby>のおかげで、このサイトの<ruby>安全<rt>あんぜん</rt></ruby>は<ruby>守<rt>まも</rt></ruby>られたよ！
+        </p>
+        <p style="line-height: 2.0;">
+            <ruby>今日<rt>きょう</rt></ruby>のお<ruby>仕事<rt>しごと</rt></ruby>はこれでおしまい！<br>
+            <strong>さあ、<ruby>君<rt>きみ</rt></ruby>の「<ruby>報酬<rt>ほうしゅう</rt></ruby>」を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りに行こう！</strong>
+        </p>
+        <button class="good-btn" style="background-color: #ef6c00;" onclick="goToNextPhase()"><ruby>報酬<rt>ほうしゅう</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>るページへ</button>
+    </div>
+</div>
+
+<script src="dark_education.js"></script>
+</body>
+</html>

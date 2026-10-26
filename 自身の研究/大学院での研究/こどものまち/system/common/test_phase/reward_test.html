@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ほうしゅうをえらぼう ｜ こどものまち</title>
+    <link rel="stylesheet" href="reward_test.css">
+</head>
+<body>
+
+<div id="reward-container">
+    
+    <header class="header-area">
+        <h2>🚔 パトロールのお<ruby>仕事<rt>しごと</rt></ruby> おつかれさま！</h2>
+        <p class="subtitle">きみの<ruby>報酬<rt>ほうしゅう</rt></ruby>（お<ruby>給料<rt>きゅうりょう</rt></ruby>）を１つ<ruby>選<rt>えら</rt></ruby>んでね！</p>
+    </header>
+
+    <!-- 報酬の3択カードエリア -->
+    <div class="reward-grid">
+        
+        <!-- 【選択肢 1】 300k （正解） -->
+        <div class="reward-card" onclick="openModal('300k')">
+            <div class="badge-area"></div>
+            <div class="reward-amount-box">
+                <span class="reward-amount">300</span><span class="unit">k</span>
+            </div>
+            <p class="reward-desc">パトロールの<ruby>基本<rt>きほん</rt></ruby>のお<ruby>給料<rt>きゅうりょう</rt></ruby></p>
+            <button class="select-btn">これを受け取る</button>
+        </div>
+
+        <!-- 【選択肢 2】 400k （罠①：サブスク） -->
+        <div class="reward-card" onclick="openModal('400k')">
+            <div class="badge-area"></div>
+            <div class="reward-amount-box">
+                <span class="reward-amount">400</span><span class="unit">k</span>
+            </div>
+            <p class="reward-desc">ちょっと多めのお<ruby>給料<rt>きゅうりょう</rt></ruby></p>
+            <button class="select-btn">これを受け取る</button>
+        </div>
+
+        <!-- 【選択肢 3】 500k （罠②：同調圧力） -->
+        <div class="reward-card highlight-card" onclick="openModal('500k')">
+            <div class="badge-area">
+                <div class="social-proof-badge">🔥 人気No.1！ 隊員の80%がこれを選んでいます！</div>
+            </div>
+            <div class="reward-amount-box">
+                <span class="reward-amount super-amount">500</span><span class="unit super-unit">k</span>
+            </div>
+            <p class="reward-desc"><ruby>豪華<rt>ごうか</rt></ruby>スペシャルお<ruby>給料<rt>きゅうりょう</rt></ruby></p>
+            <button class="select-btn highlight-btn">これを受け取る</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= 確認ポップアップ（共通モーダル） ================= -->
+<div id="confirm-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h3 id="modal-title" class="warning-title">確認</h3>
+        <div id="modal-body" class="confirm-msg"></div>
+        <div class="modal-buttons" id="modal-buttons">
+            <button id="modal-cancel-btn" class="modal-btn back-btn" onclick="closeConfirmModal()">やめる ↩️</button>
+            <button id="modal-submit-btn" class="modal-btn confirm-btn" onclick="handlePrimarySubmit()">はい、決定する！</button>
+        </div>
+    </div>
+</div>
+
+<script src="reward_test.js"></script>
+</body>
+</html>

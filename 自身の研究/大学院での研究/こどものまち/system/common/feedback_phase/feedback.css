@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #333;
+}
+
+#feedback-container {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 35px 30px 25px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header-area h2 {
+    color: #00796b;
+    font-size: 1.7em;
+    margin: 0 0 20px 0;
+}
+
+/* ルビ表示 */
+ruby { ruby-align: center; }
+rt { font-size: 0.55em; color: #555; font-weight: normal; }
+
+/* ステップカード切替 */
+.step-card {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+    flex-grow: 1;
+}
+.step-card.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.step-heading {
+    font-size: 1.4em;
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.step-subtext {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+/* プレビューエリア（ミニポップアップ） */
+.mini-popup {
+    background: #ffffff;
+    border: 2px solid #bdbdbd;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.mini-title { font-weight: bold; color: #00796b; margin: 0 0 8px 0; font-size: 1.1em; }
+.mini-main { font-size: 1.1em; margin: 5px 0; font-weight: bold; }
+
+.trap-highlight {
+    border: 2px solid #d32f2f;
+    background: #ffebee;
+    color: #c62828;
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.trap-highlight-badge {
+    border: 2px solid #d32f2f;
+    background: #ffebee;
+    color: #c62828;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* 解説ボックス（ステップ2） */
+.explanation-box {
+    background: #e1f5fe;
+    border: 2px solid #81d4fa;
+    border-radius: 12px;
+    padding: 22px 20px;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.15em;
+    line-height: 1.9;
+    color: #0277bd;
+}
+
+.explanation-box strong {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* 精神ケアボックス（ステップ3） */
+.care-box {
+    background: #e3f2fd;
+    border: 2px solid #90caf9;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 15px 0 20px 0;
+}
+.care-body {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 0;
+    color: #283593;
+}
+
+.key-message-box {
+    background: #fffde7;
+    border: 2px solid #fbc02d;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 15px 0;
+}
+.key-body { font-size: 1.15em; margin: 0; line-height: 1.8; color: #333; }
+.care-text { font-size: 1.05em; color: #2e7d32; font-weight: bold; }
+
+/* 支給お給料 */
+.payout-box {
+    background: #e8f5e9;
+    border: 2px dashed #4caf50;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 15px;
+}
+.payout-label { font-size: 1.2em; font-weight: bold; color: #2e7d32; }
+.payout-amount { font-size: 2.6em; font-weight: 900; color: #2e7d32; line-height: 1; }
+.unit { font-size: 0.5em; margin-left: 2px; }
+
+/* ナビゲーションボタンエリア（左右配置） */
+.nav-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 50px;
+}
+
+.nav-btn {
+    font-size: 1.1em;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+/* 「つぎへ」ボタン */
+.next-btn {
+    background-color: #0288d1;
+    color: white;
+    margin-left: auto;
+}
+
+.next-btn:hover:not(:disabled) {
+    background-color: #0277bd;
+}
+
+.next-btn:disabled {
+    background-color: #cccccc !important;
+    color: #888888 !important;
+    cursor: not-allowed;
+}
+
+/* 「もどる」ボタン：常に押しやすい青色に設定 */
+.prev-btn {
+    background-color: #0288d1;
+    color: white;
+}
+
+.prev-btn:hover {
+    background-color: #0277bd;
+}

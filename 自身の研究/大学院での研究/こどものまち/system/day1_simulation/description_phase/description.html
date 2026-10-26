@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おしごとのせつめい</title>
+    <link rel="stylesheet" href="description.css">
+</head>
+<body>
+
+<div id="presentation-container">
+    
+    <!-- スライド1：ECサイトの仕組み -->
+    <div class="slide active" data-step="0">
+        <h2>インターネットでの おかいもの</h2>
+        <p>インターネットで「<ruby>買<rt>か</rt></ruby>う」ボタンを<ruby>押<rt>お</rt></ruby>すと、どうなるかな？</p>
+        
+        <div class="visual-flow">
+            <div class="flow-item"><div class="icon-box">🖱</div><p>ボタンを<ruby>押<rt>お</rt></ruby>す</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">💳</div><p>ほんとうのお<ruby>金<rt>かね</rt></ruby>をはらう</p></div>
+            <div class="arrow">➡</div>
+            <div class="flow-item"><div class="icon-box">🚚</div><p><ruby>品物<rt>しなもの</rt></ruby>がとどく</p></div>
+        </div>
+        <p class="warning-text">ゲームのコインではなく、<strong>ほんとうのお<ruby>金<rt>かね</rt></ruby>がへってしまう</strong>んだ。</p>
+    </div>
+
+    <!-- スライド2：ダークパターンとは -->
+    <div class="slide" data-step="1">
+        <h2>わるい<ruby>表示<rt>ひょうじ</rt></ruby>（ダークパターン）とは？</h2>
+        <p>インターネットには、<strong>ほんとうは<ruby>買<rt>か</rt></ruby>うつもりがなかったのに、<br>つい<ruby>買<rt>か</rt></ruby>ってしまうように<ruby>作<rt>つく</rt></ruby>られた<ruby>罠<rt>わな</rt></ruby></strong>があるよ。</p>
+        
+        <div class="visual-flow">
+            <div class="trap-card">
+                <div class="icon-box">⏳</div>
+                <p>「あと10秒！」と<ruby>焦<rt>あせ</rt></ruby>らせる</p>
+            </div>
+            <div class="trap-card">
+                <div class="icon-box">🔍</div>
+                <p>お<ruby>金<rt>かね</rt></ruby>にかかわることを<br>すごく小さく<ruby>書<rt>か</rt></ruby>く</p>
+            </div>
+        </div>
+        <p class="warning-text">「タダ（無料）」だと思わせたり、<strong><ruby>気<rt>き</rt></ruby>づかないうちにお<ruby>金<rt>かね</rt></ruby>をとろうとする</strong><br>わるい<ruby>罠<rt>わな</rt></ruby>を「ダークパターン」とよぶんだ。</p>
+    </div>
+
+    <!-- スライド3：実践型チュートリアル（2つの罠を探す） -->
+    <div class="slide" data-step="2">
+        <h2>ためしてみよう！（チュートリアル）</h2>
+        <p>カードの中に隠れている<strong>わるい<ruby>罠<rt>わな</rt></ruby>（あやしい場所）を２つ</strong>みつけてね！<br>
+           <span class="count-badge">みつけた数：<span id="tutorial-count">0</span> / 2</span>
+        </p>
+        
+        <div class="tutorial-card-grid">
+            <!-- 練習カード①：隠ぺい型（小さな文字） -->
+            <div id="card-hidden-box" class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/sleeve.jpg" alt="限定スリーブ画像">
+                </div>
+                <p class="item-name">限定スリーブ ピカピカ版</p>
+                <p class="item-price">100円 <span class="badge">特価</span></p>
+                <div class="trap-area">
+                    <p id="trap-hidden" class="trap-target hidden-text" onclick="findTrap('hidden')">
+                        ※<ruby>毎月<rt>まいつき</rt></ruby>3,000円の<ruby>自動<rt>じどう</rt></ruby><ruby>定期<rt>ていき</rt></ruby><ruby>購入<rt>こうにゅう</rt></ruby>コースに<ruby>登録<rt>とうろく</rt></ruby>されます。
+                    </p>
+                </div>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+
+            <!-- 練習カード②：二重価格型（30%OFF表示） -->
+            <div id="card-discount-box" class="item-card">
+                <div class="item-img">
+                    <img src="../../common/images/case_dx.jpg" alt="特製ケース画像">
+                </div>
+                <p class="item-name">公式デッキケース（DX）</p>
+                <p class="item-price">
+                    <del class="old-price">1,150円</del> 
+                    <span class="current-price">800円</span>
+                </p>
+                <div class="trap-area">
+                    <p id="trap-discount" class="trap-target discount-text" onclick="findTrap('discount')">
+                        🔥 今だけ 30%OFF！
+                    </p>
+                </div>
+                <button class="cart-btn safe-btn">カートに入れる</button>
+            </div>
+        </div>
+        
+        <!-- 解説ポップアップボックス -->
+        <div id="tutorial-success" class="success-msg" style="display: none;">
+            <p>🎉 <strong id="tutorial-success-title">大正解（だいせいかい）！</strong></p>
+            <p class="explanation" id="tutorial-explanation-text"></p>
+            <button id="resume-search-btn" class="resume-btn" onclick="resumeSearch()" style="display: none;">
+                もう１つの<ruby>罠<rt>わな</rt></ruby>を探す 🔍
+            </button>
+        </div>
+    </div>
+
+    <!-- スライド4：ミッションの説明（研究的誘導を排除した文章） -->
+    <div class="slide" data-step="3">
+        <h2>きみの おしごと 🚔</h2>
+        <p>きみは今日から、わるい<ruby>罠<rt>わな</rt></ruby>をみつける<strong>「ネットパトロール屋さん」</strong>だ！</p>
+        
+        <div class="mission-box">
+            <h3>📝 ミッション</h3>
+            <p>これから、おかいものサイトのパトロールをするよ。</p>
+            <p>みんなをだまして、お<ruby>金<rt>かね</rt></ruby>をとろうとする<strong>「ズルい<ruby>誘導<rt>ゆうどう</rt></ruby>（わな）」</strong>が<ruby>隠<rt>かく</rt></ruby>れているよ！</p>
+            <p>「あやしいな」と思う場所をみつけたら、クリックして<ruby>報告<rt>ほうこく</rt></ruby>しよう！</p>
+        </div>
+    </div>
+
+    <!-- ナビゲーションボタン -->
+    <div class="nav-buttons">
+        <button id="prev-btn" class="nav-btn" onclick="changeSlide(-1)" style="visibility: hidden;">⬅ もどる</button>
+        <button id="next-btn" class="nav-btn next" onclick="changeSlide(1)">つぎへ ➡</button>
+    </div>
+
+</div>
+
+<script src="description.js"></script>
+</body>
+</html>

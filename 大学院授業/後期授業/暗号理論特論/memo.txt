@@ -1,0 +1,11 @@
+Understanding Cryptography
+Second Edition
+From Established Symmetric and Asymmetric
+Ciphers to Post-Quantum Algorithms
+
+ここにスライド上がるからそれを訳す。
+  https://www.crypto-textbook.com/online-course/
+量子暗号コンピュータが登場しても安全に使える暗号を
+Post（次の）ーQuantum 暗号っていう。
+
+１章のスライドを日本語に訳してそれを提出して終わり。

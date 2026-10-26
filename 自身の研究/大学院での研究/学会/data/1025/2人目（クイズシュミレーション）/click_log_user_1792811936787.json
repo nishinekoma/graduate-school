@@ -1,0 +1,25 @@
+{
+  "participant_id": "user_1792811936787",
+  "survey_attributes": {},
+  "start_time": "2026-10-25T05:20:24.554Z",
+  "counts": {
+    "mix": 0,
+    "choco": 0,
+    "gorgeous": 1,
+    "cancel": 0,
+    "upsell_shown": 0,
+    "changed_to_gorgeous": 0
+  },
+  "history": [
+    {
+      "action": "gorgeous",
+      "detail": "Opened modal for gorgeous",
+      "timestamp": "2026-10-25T05:20:37.819Z"
+    },
+    {
+      "action": "confirm",
+      "detail": "Final choice: gorgeous",
+      "timestamp": "2026-10-25T05:20:39.715Z"
+    }
+  ]
+}

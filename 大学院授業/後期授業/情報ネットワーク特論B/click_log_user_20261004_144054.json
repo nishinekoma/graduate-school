@@ -1,0 +1,39 @@
+{
+  "participant_id": "user_20261004_144054",
+  "survey_attributes": {
+    "participant_id": "user_20261004_144054",
+    "submitted_at": "2026-10-04T05:40:54.430Z",
+    "age": "9",
+    "grade": "3",
+    "gender": "female",
+    "search_freq": "frequent",
+    "device_own": "shared",
+    "game_freq": "wanted_to_play"
+  },
+  "start_time": "2026-10-04T05:45:15.213Z",
+  "counts": {
+    "300k": 1,
+    "400k": 0,
+    "500k": 0,
+    "cancel": 0,
+    "upsell_shown": 1,
+    "changed_to_500k": 0
+  },
+  "history": [
+    {
+      "action": "300k",
+      "detail": "Opened modal for 300k",
+      "timestamp": "2026-10-04T05:45:16.447Z"
+    },
+    {
+      "action": "upsell_shown",
+      "detail": "Showed second upsell modal for 300k",
+      "timestamp": "2026-10-04T05:45:18.222Z"
+    },
+    {
+      "action": "confirm",
+      "detail": "Final choice: 300k",
+      "timestamp": "2026-10-04T05:45:19.589Z"
+    }
+  ]
+}
