@@ -321,3 +321,31 @@ Web
       子どもはダークパターンを完全に無理解な存在ではなく、一定の操作意図を理解できるが、その認識は不完全であり、特に巧妙な表現・視覚的誘導・選択肢の非対称性には脆弱である。
       そのため、子ども向けのデジタル環境では、単に保護者管理に頼るだけでなく、子ども自身が誘導的UIを認識できるようにする教育や、そもそも子どもを対象にした悪質なUI設計を制限する設計・政策上の対応が必要である。
 
+項目	内容
+URL	https://doi.org/10.1145/3706598.3713493
+年度	2025年
+タイトル	『From Awareness to Action: The Effects of Experiential Learning on Educating Users about Dark Patterns』
+区分	査読付き国際会議論文（Peer-reviewed Conference Paper）
+状態	採択・出版済み（CHI 2025, April 26–May 1, 2025, Yokohama, Japan）
+出版元	ACM（Association for Computing Machinery）
+会議	CHI 2025（ACM Conference on Human Factors in Computing Systems）
+分野	HCI・ダークパターン研究・デジタルリテラシー・体験型学習・ユーザー教育
+難易度	中〜高程度（ダークパターン分類、体験型学習モデル、実験デザイン、統計的評価の理解が必要）
+受賞	Best Paper Award
+著者	Jingzhou Ye, Yao Li, Wenting Zou, Xueqiang Wang
+所属	University of Central Florida（米国・セントラルフロリダ大学）、The Pennsylvania State University（米国・ペンシルベニア州立大学）
+  本論文は、CHI 2025の正式な論文集に掲載された研究です。Penn Stateの研究者データベースでも出版情報が確認でき、Best Paper Awardの受賞情報も確認できます。
+  Abstract
+
+  目的
+  - ダークパターンに関する知識だけでなく、実際に認識・対処する能力を向上させる教育手法を検討する。
+  - 体験型学習プラットフォーム「DPTrek」の教育効果を明らかにする。
+  方法
+  - 成人38名を対象に、体験型学習群と静的教材による学習群を比較した。
+  - 模擬Web環境での体験、振り返り、知識学習、別事例での実践を行った。
+  結果
+  - 体験型学習によって、ダークパターンの認識・対処能力の向上が確認された。
+  - 実際の操作を通じた学習は、ダークパターンへの理解を促進する可能性が示された。
+  結論
+  - ダークパターン教育では、知識の提供だけでなく、実際の体験と実践を組み合わせることが有効である。
+  - ただし、対象は成人であり、子どもへの教育効果や長期的な知識の定着は未検証である。
